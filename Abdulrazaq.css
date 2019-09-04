@@ -15,8 +15,48 @@ body{
     border-top-left-radius: 10%;
     background-image: linear-gradient(180deg, white,blue);
 }
-
-
+ .form-popup {
+        display: none;
+        position: fixed;
+       bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        box-shadow: #c0c0c0c0;
+        z-index: 9;    
+}
+.form-container {
+    max-width: 300px;
+   
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container input[type=text], .form-container input[type=email] , .form-container input[type=select],select,textarea{
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .form-container input[type=text]:focus,.form-container input[type=email]:focus,select:focus, textarea:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border-radius:5px;
+    margin-left:35px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: red;
+    opacity: 0.7;
+  }
 li{
     position: relative;
     top:4px;
@@ -34,6 +74,15 @@ img{
     margin-right:70px;
 }
 
+#contactForm{
+    display: block;    
+    width: auto;
+        height: auto;
+        background: red;
+        float: right;
+
+
+}
 h1,h2,h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
