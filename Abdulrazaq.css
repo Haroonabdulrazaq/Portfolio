@@ -4,6 +4,7 @@ body{
  margin-right:50px;
  background: white;
 width:80%;
+box-sizing:border-box;
 }
 @media screen and (max-height: 450px) {
     body {padding-top: 10px;
