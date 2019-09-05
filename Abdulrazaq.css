@@ -3,9 +3,12 @@ body{
  margin-left:50px;
  margin-right:50px;
  background: white;
+width:80%;
 }
 @media screen and (max-height: 450px) {
-    body {padding-top: 10px;}
+    body {padding-top: 10px;
+width: 80%;
+}
     body a {font-size: 10px;}
 
   }
