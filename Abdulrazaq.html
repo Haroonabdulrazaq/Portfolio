@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Abdulrazaq.css">
+    <link rel="stylesheet" href="Abdulrazaq.css">  
+   
     <title>My Cv</title>
 </head>
 <body>
@@ -30,15 +31,40 @@
                  <a href="#Personal Interest"> <li>Personal Interest</li></a>
                  <a href="#Hobbies"> <li> Hobbies</li></a>
                  <a href="#Referees"><li>Referees</li></a>   
-                 
+                 <a href="#" onclick="openForm()" class="open-button"><li>Contact</li></a>  
          </ul>
+        
 </nav>
+
     </header>
+    <div id="myForm" class="form-popup">
+            <form action="" method="" class="form-container" id="myForm">
+              <h1>Contact</h1>
+              <label for="name"><b>Name*</b></label>
+              <input type="text" placeholder="Enter Name" id="name" name="name" required autofocus><br>
+          
+              <label for="email"><b>Email*</b></label>
+              <input type="email" placeholder="example@mail.com" id="email" name="email" required><br>
+
+              <label for="title"><b>Title*</b></label><br>
+              <select name="title" id="title" required>
+                    <option value="default">Select-Title</option>
+                    <option value="Mr">Mr</option>
+                   <option value="Mr">Mrs</option>
+              </select><br>
+              <label for="comment"><b>Comment*</b></label>
+              <textarea id="title" name="comment" id="comment" cols="30" rows="2" minlength="20" placeholder="Comment" required></textarea>
+          
+              <input type="submit" class="btn" onclick="formsub()" id="submit">Submit</input>
+              <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
     <section id="img-biodata"><hr>
         <img src="https://res.cloudinary.com/hanq-o/image/upload/v1566565338/IMG_20190119_162554_9_z0frwv.jpg" alt="My ProfilePic" width="200" height="250"/>
+
         <div id="Biodata">   <h3> Biodata:</h3>
             Name: HAROON, Abdulrazaq Olalekan<br>
-           sjjh<br>
+           Age:24  <br>
             Gender: Male<br>
             Marital Status: Single<br>
             State of origin: kwara State<br>
@@ -269,6 +295,7 @@
                        </nav>
 
        </footer> 
-    
+
+       <script src="Abdulrazaq.js"></script> 
 </body>
 </html>
