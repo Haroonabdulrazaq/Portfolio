@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+}
+
+$dark:#272a31;
+$grey: #d3d3d3;
+$orange: #ec5242;
+$white: #f1f1f1;
+
+.dark-color {
+  color: $dark;
+}
+
+.grey-color {
+  color: $grey;
+}
+
+.white-color {
+  color: $white;
+}
+
+.orange-border {
+  border: $orange;
+}
+
+.shadow {
+  box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
+}
+
+.header {
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.582) 20%),url('../image/software.jpeg')no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0,100% 0,100% 86%,0 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .header-text {
+    padding: 1rem;
+    .header-name {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    .header-sub {
+      min-width: 1rem;
+      font-weight: 300;
+    }
+  }
+  i {
+    font-size: 2rem;
+    color: $white;
+    cursor: pointer;
+  }
+}
+

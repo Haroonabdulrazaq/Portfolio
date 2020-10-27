@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+}
+
+.dark-color {
+  color: #272a31;
+}
+
+.grey-color {
+  color: #d3d3d3;
+}
+
+.white-color {
+  color: #f1f1f1;
+}
+
+.orange-border {
+  border: #ec5242;
+}
+
+.shadow {
+  -webkit-box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
+          box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
+}
+
+.header {
+  height: 85vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.582))), url("../image/software.jpeg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.582) 20%), url("../image/software.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-text {
+  padding: 1rem;
+}
+
+.header .header-text .header-name {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.header .header-text .header-sub {
+  min-width: 1rem;
+  font-weight: 300;
+}
+
+.header i {
+  font-size: 2rem;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
