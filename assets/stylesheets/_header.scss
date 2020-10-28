@@ -1,0 +1,24 @@
+.header {
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.582) 20%),url('../image/software.jpeg')no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0,100% 0,100% 86%,0 100%);
+  @include flexPoint(column, space-around);
+  .header-text {
+    padding: 1rem;
+    .header-name {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    .header-sub {
+      min-width: 1rem;
+      font-weight: 300;
+    }
+  }
+  i {
+    font-size: 5rem;
+    color: $white;
+    cursor: pointer;
+  }
+}
