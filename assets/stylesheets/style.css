@@ -40,6 +40,10 @@ body {
           box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
 }
 
+ul, li {
+  list-style-type: none;
+}
+
 .header {
   height: 85vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.582))), url("../image/software.jpeg") no-repeat;
@@ -90,15 +94,14 @@ body {
 }
 
 .projects .project-wrapper {
-  height: 95vh;
+  height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 40rem 40rem 40rem 40rem;
+      grid-template-rows: 40rem 40rem 40rem 40rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 1rem;
-  padding: 1rem 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -106,9 +109,9 @@ body {
     background: cornflowerblue;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    height: 65vh;
+    -ms-grid-rows: 40rem 40rem;
+        grid-template-rows: 40rem 40rem;
+    height: auto;
   }
 }
 
@@ -119,14 +122,39 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    height: 65vh;
   }
 }
 
 .projects .project-wrapper .card {
   background: green;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .project-wrapper .project-1 .card-img {
+  background: cyan;
+  height: 50%;
   width: 100%;
-  height: 100%;
-  margin: .5rem;
+}
+
+.projects .project-wrapper .project-1 .card-info {
+  background: blue;
+  height: 50%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
