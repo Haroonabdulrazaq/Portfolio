@@ -2,7 +2,6 @@
 .projects {
   height: auto;
   background: $white;
-  border: 2px solid $orange;
   padding: 1rem;
   .project-wrapper {
     height: auto;
@@ -11,13 +10,11 @@
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     @include responsive(tab){
-      background: cornflowerblue;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 45rem 45rem;
       height: auto;
     }
     @include responsive(desktop){
-      background: cornflowerblue;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 45rem;
     }
@@ -32,12 +29,12 @@
         background: url(../image/software.jpeg)no-repeat;
         background-size: cover;
         background-position: center;
-        height: 50%;
+        min-height: 50%;
         width: 100%;
       }
       .card-info {
         background: blue;
-        height: 50%;
+        min-height: 50%;
         width: 100%;
       }
     }

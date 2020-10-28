@@ -10,6 +10,9 @@
 
 html {
   font-size: 62.5%;
+  @include responsive(large-screen){
+    font-size: 100%;
+  }
 }
 
 $dark:#272a31;
@@ -54,5 +57,7 @@ body {
 ul,li {
   list-style-type: none;
 }
+
 @import "header";
 @import "project";
+@import "skills";

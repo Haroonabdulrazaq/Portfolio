@@ -5,4 +5,7 @@
   @if ($breakpoint == desktop) {
     @media only screen and (min-width: 900px) { @content }
   }
+  @if ($breakpoint == large-screen) {
+    @media only screen and (min-width: 1500px) { @content }
+  }
 }
