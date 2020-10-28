@@ -88,19 +88,19 @@ ul,li {
   .project-wrapper {
     height: auto;
     display: grid;
-    grid-template-rows: 40rem 40rem 40rem 40rem;
+    grid-template-rows: 45rem 45rem 45rem 45rem;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     @include responsive(tab){
       background: cornflowerblue;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 40rem 40rem;
+      grid-template-rows: 45rem 45rem;
       height: auto;
     }
     @include responsive(desktop){
       background: cornflowerblue;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: 45rem;
     }
     .card {
       background: green;
@@ -108,11 +108,11 @@ ul,li {
       padding: 1rem;
       text-align: center;
       font-size: 1.5rem;
-      @include flexPoint(column, space-between)
-    }
-    .project-1 {
+      @include flexPoint(column, space-between);
       .card-img {
-        background: cyan;        
+        background: url(../image/software.jpeg)no-repeat;
+        background-size: cover;
+        background-position: center;
         height: 50%;
         width: 100%;
       }

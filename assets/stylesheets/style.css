@@ -97,8 +97,8 @@ ul, li {
   height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 40rem 40rem 40rem 40rem;
-      grid-template-rows: 40rem 40rem 40rem 40rem;
+  -ms-grid-rows: 45rem 45rem 45rem 45rem;
+      grid-template-rows: 45rem 45rem 45rem 45rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 1rem;
@@ -109,8 +109,8 @@ ul, li {
     background: cornflowerblue;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 40rem 40rem;
-        grid-template-rows: 40rem 40rem;
+    -ms-grid-rows: 45rem 45rem;
+        grid-template-rows: 45rem 45rem;
     height: auto;
   }
 }
@@ -120,8 +120,8 @@ ul, li {
     background: cornflowerblue;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    -ms-grid-rows: 45rem;
+        grid-template-rows: 45rem;
   }
 }
 
@@ -146,13 +146,15 @@ ul, li {
           align-items: center;
 }
 
-.projects .project-wrapper .project-1 .card-img {
-  background: cyan;
+.projects .project-wrapper .card .card-img {
+  background: url(../image/software.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 50%;
   width: 100%;
 }
 
-.projects .project-wrapper .project-1 .card-info {
+.projects .project-wrapper .card .card-info {
   background: blue;
   height: 50%;
   width: 100%;
