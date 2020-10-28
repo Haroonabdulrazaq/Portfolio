@@ -1,25 +1,28 @@
+@import "mediaQuery";
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
 }
 
-body {
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.7;
-}
-
 $dark:#272a31;
 $grey: #d3d3d3;
 $orange: #ec5242;
 $white: #f1f1f1;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  background: $white;
+  box-sizing: border-box;
+}
 
 .dark-color {
   color: $dark;
@@ -41,16 +44,24 @@ $white: #f1f1f1;
   box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
 }
 
+@mixin flexPoint($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
+
 .header {
   height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.582) 20%),url('../image/software.jpeg')no-repeat;
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0,100% 0,100% 86%,0 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
+  @include flexPoint(column, space-around);
   .header-text {
     padding: 1rem;
     .header-name {
@@ -63,9 +74,41 @@ $white: #f1f1f1;
     }
   }
   i {
-    font-size: 2rem;
+    font-size: 5rem;
     color: $white;
     cursor: pointer;
   }
 }
 
+.projects {
+  height: auto;
+  background: $white;
+  border: 2px solid $orange;
+  padding: 1rem;
+  .project-wrapper {
+    height: 95vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem 1rem;
+    @include responsive(tab){
+      background: cornflowerblue;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 65vh;
+    }
+    @include responsive(desktop){
+      background: cornflowerblue;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      height: 65vh;
+    }
+    .card {
+      background: green;
+     width: 100%;
+     height: 100%;
+     margin: .5rem;
+    }
+  }
+}
