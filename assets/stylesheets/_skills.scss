@@ -1,7 +1,7 @@
 .skills {
+  background: $dirty-white;
   min-height: 50vh;
   padding: 1rem;
-  border: 2px solid $orange;
   @include flexPoint(column, space-around);
   @include responsive(tab){
     @include flexPoint(row, space-around);
@@ -10,6 +10,7 @@
     @include flexPoint(row, space-around);
   }
   .skill {
+    background: $white;
     max-width: 40vh;
     min-height: 20vh;
     padding: 1rem;
@@ -17,16 +18,23 @@
     @include flexPoint(row, space-around);
     flex-wrap: wrap;
     @include responsive(tab){
-      width: 20vh;
+      width: 30vh;
+      min-height: 40vh;
+    }
+    @include responsive(desktop){
+      width: 40vh;
       min-height: 40vh;
     }
     span {
+      display: inline-block;
+      background: $light-orange;
       height: 3rem;
       padding: 1rem;
-      color: $dark;
-      font-weight: 500;
+      padding-bottom: 3rem;
+      border-radius: .5rem;
+      color: $white;
+      font-size: 1.5rem;
       text-align: center;
-      border: 2px solid $orange;
     }
   }
 }

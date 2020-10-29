@@ -11,18 +11,13 @@ html {
   font-size: 62.5%;
 }
 
-@media only screen and (min-width: 1500px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  background: #f1f1f1;
+  background: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #0f0f0fd2;
 }
 
 .dark-color {
@@ -34,7 +29,7 @@ body {
 }
 
 .white-color {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 .orange-border {
@@ -81,20 +76,56 @@ ul, li {
   font-weight: 700;
 }
 
+@media only screen and (min-width: 768px) {
+  .header .header-text .header-name {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .header .header-text .header-name {
+    font-size: 9rem;
+  }
+}
+
 .header .header-text .header-sub {
-  min-width: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .header-text .header-sub {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .header .header-text .header-sub {
+    font-size: 5rem;
+  }
 }
 
 .header i {
   font-size: 5rem;
-  color: #f1f1f1;
+  color: #ffffff;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .header i {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .header i {
+    font-size: 12rem;
+  }
 }
 
 .projects {
   height: auto;
-  background: #f1f1f1;
+  background: #ffffff;
   padding: 1rem;
 }
 
@@ -129,11 +160,11 @@ ul, li {
 }
 
 .projects .project-wrapper .card {
-  background: green;
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
   font-size: 1.5rem;
+  background: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,15 +189,14 @@ ul, li {
 }
 
 .projects .project-wrapper .card .card-info {
-  background: blue;
   min-height: 50%;
   width: 100%;
 }
 
 .skills {
+  background: #f1f1f1;
   min-height: 50vh;
   padding: 1rem;
-  border: 2px solid #ec5242;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,6 +246,7 @@ ul, li {
 }
 
 .skills .skill {
+  background: #ffffff;
   max-width: 40vh;
   min-height: 20vh;
   padding: 1rem;
@@ -238,17 +269,181 @@ ul, li {
 
 @media only screen and (min-width: 768px) {
   .skills .skill {
-    width: 20vh;
+    width: 30vh;
+    min-height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .skills .skill {
+    width: 40vh;
     min-height: 40vh;
   }
 }
 
 .skills .skill span {
+  display: inline-block;
+  background: #f57061;
   height: 3rem;
   padding: 1rem;
-  color: #272a31;
-  font-weight: 500;
+  padding-bottom: 3rem;
+  border-radius: .5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
   text-align: center;
-  border: 2px solid #ec5242;
 }
-/*# sourceMappingURL=style.css.map */
+
+.contact-form {
+  min-height: 50vh;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stranger {
+  font-size: 2.5rem;
+  line-height: 1.7;
+  background: -webkit-gradient(linear, left top, right top, from(#272a31), to(#ffffff));
+  background: linear-gradient(to right, #272a31, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+@media only screen and (min-width: 768px) {
+  .stranger {
+    font-size: 5rem;
+  }
+}
+
+.stranger:hover {
+  -webkit-transform: skew(-5deg, -2deg);
+          transform: skew(-5deg, -2deg);
+}
+
+.form {
+  border: 2px solid #ec5242;
+  padding: 2rem;
+  width: 100%;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .form__group:not(:last-child) {
+    display: inline;
+    margin-bottom: 1rem;
+    width: 50%;
+  }
+}
+
+.form__input {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .form__input {
+    font-size: 1rem;
+    width: 40%;
+    display: inline;
+  }
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 3px solid rgba(236, 82, 66, 0.8);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid #272a31;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #d3d3d3;
+  font-size: 1.5rem;
+}
+
+.form__label {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 1.7rem;
+  margin-top: .7rem;
+  display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@media only screen and (min-width: 768px) {
+  .form__label {
+    font-size: 1.5rem;
+  }
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.form__textarea {
+  width: 100%;
+  font-family: inherit;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+}
+
+.form__textarea:focus {
+  outline: inherit;
+  border-radius: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .form__textarea {
+    width: 70%;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+}
+
+.say-hi {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .say-hi {
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../image/hi.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../image/hi.jpeg);
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -19,11 +19,11 @@
       grid-template-rows: 45rem;
     }
     .card {
-      background: green;
       border-radius: 1rem;
       padding: 1rem;
       text-align: center;
       font-size: 1.5rem;
+      background: $dirty-white;
       @include flexPoint(column, space-between);
       .card-img {
         background: url(../image/software.jpeg)no-repeat;
@@ -33,7 +33,6 @@
         width: 100%;
       }
       .card-info {
-        background: blue;
         min-height: 50%;
         width: 100%;
       }

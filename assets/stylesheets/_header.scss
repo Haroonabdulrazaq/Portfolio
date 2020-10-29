@@ -10,15 +10,33 @@
     .header-name {
       font-size: 4rem;
       font-weight: 700;
+      @include responsive(tab) {
+        font-size: 5rem;
+      }
+      @include responsive(large-screen) {
+        font-size: 9rem;
+      }
     }
     .header-sub {
-      min-width: 1rem;
+      font-size: 1.5rem;
       font-weight: 300;
+      @include responsive(tab) {
+        font-size: 2.5rem;
+      }
+      @include responsive(large-screen) {
+        font-size: 5rem;
+      }
     }
   }
   i {
     font-size: 5rem;
     color: $white;
     cursor: pointer;
+    @include responsive(tab) {
+      font-size: 8rem;
+    }
+    @include responsive(large-screen) {
+      font-size: 12rem;
+    }
   }
 }

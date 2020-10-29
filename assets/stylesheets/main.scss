@@ -10,21 +10,22 @@
 
 html {
   font-size: 62.5%;
-  @include responsive(large-screen){
-    font-size: 100%;
-  }
 }
 
 $dark:#272a31;
 $grey: #d3d3d3;
+$text-grey: #0f0f0fd2;
 $orange: #ec5242;
-$white: #f1f1f1;
+$light-orange: #f57061;
+$dirty-white: #f1f1f1;
+$white: #ffffff;
 
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
   background: $white;
   box-sizing: border-box;
+  color: $text-grey;
 }
 
 .dark-color {
@@ -57,7 +58,7 @@ body {
 ul,li {
   list-style-type: none;
 }
-
 @import "header";
 @import "project";
 @import "skills";
+@import "contact";

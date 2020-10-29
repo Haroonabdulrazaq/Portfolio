@@ -1,0 +1,114 @@
+.contact-form {
+  min-height: 50vh;
+  background: $white;
+  @include flexPoint(row,center)
+}
+
+.stranger {
+  font-size: 2.5rem;
+  line-height: 1.7;
+  background: linear-gradient(to right, $dark, $white );
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-align: center;
+  letter-spacing: .2rem;
+  transition: all .2s;
+  @include responsive(tab) {
+    font-size: 5rem;
+  }
+  &:hover {
+    transform: skew(-5deg,- 2deg);
+  }
+
+}
+
+.form {
+  border: 2px solid $orange;
+  padding: 2rem;
+  width: 100%;
+  &__group:not(:last-child) {
+    margin-bottom: 1rem;
+
+    @include responsive(tab){
+      display: inline;
+      margin-bottom: 1rem;
+      width: 50%;
+    }
+  }
+
+  &__input {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    @include responsive(tab){
+      font-size: 1rem;
+      width: 40%;
+      display: inline;
+    }
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid rgba($orange, 0.8);
+    }
+    &:focus:invalid {
+      border-bottom:  3px solid $dark;
+    }
+    &::-webkit-input-placeholder {
+      color: $grey;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 1.7rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+    @include responsive(tab) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__textarea {
+    width: 100%;
+    font-family: inherit;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    &:focus {
+      outline: inherit;
+      border-radius: .5rem;
+    }
+    @include responsive(tab){
+      width: 70%;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+  }
+
+}
+
+.say-hi {
+  display: none;
+  @include responsive(tab) {
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.400)),url(../image/hi.jpeg);
+    background-size: cover;
+  }
+}
