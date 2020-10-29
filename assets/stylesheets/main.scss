@@ -58,7 +58,16 @@ body {
 ul,li {
   list-style-type: none;
 }
+
+.main {
+  padding: 0 .5rem;
+
+  @include responsive(desktop){
+    padding: 0 2rem;
+  }
+}
 @import "header";
 @import "project";
 @import "skills";
 @import "contact";
+@import "footer";
