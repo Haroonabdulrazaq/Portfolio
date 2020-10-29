@@ -337,7 +337,6 @@ ul, li {
 }
 
 .form {
-  border: 2px solid #ec5242;
   padding: 2rem;
   width: 100%;
 }
@@ -368,9 +367,7 @@ ul, li {
 
 @media only screen and (min-width: 768px) {
   .form__input {
-    font-size: 1rem;
-    width: 40%;
-    display: inline;
+    width: 60%;
   }
 }
 
@@ -388,6 +385,12 @@ ul, li {
   font-size: 1.5rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .form__input::-webkit-input-placeholder {
+    font-size: 2rem;
+  }
+}
+
 .form__label {
   cursor: pointer;
   font-size: 1.2rem;
@@ -400,7 +403,13 @@ ul, li {
 
 @media only screen and (min-width: 768px) {
   .form__label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .form__label {
+    font-size: 1.2rem;
   }
 }
 
@@ -417,6 +426,16 @@ ul, li {
   margin-top: 1rem;
   padding: 1rem 1.5rem;
   border: none;
+}
+
+.form__textarea::-webkit-textarea-placeholder {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .form__textarea::-webkit-textarea-placeholder {
+    font-size: 2rem;
+  }
 }
 
 .form__textarea:focus {
@@ -436,7 +455,7 @@ ul, li {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .say-hi {
     display: block;
     width: 50vw;
