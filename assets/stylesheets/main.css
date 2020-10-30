@@ -137,17 +137,17 @@ ul, li {
   height: auto;
   background: #ffffff;
   padding: 1rem;
+  margin: 5rem 0;
 }
 
 .projects .project-wrapper {
-  height: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 45rem 45rem 45rem 45rem;
       grid-template-rows: 45rem 45rem 45rem 45rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2.5rem 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -156,7 +156,7 @@ ul, li {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 45rem 45rem;
         grid-template-rows: 45rem 45rem;
-    height: auto;
+    grid-gap: 1rem;
   }
 }
 
@@ -169,12 +169,14 @@ ul, li {
   }
 }
 
-.projects .project-wrapper .card {
-  border-radius: 1rem;
-  padding: 1rem;
+.card {
+  position: relative;
+  height: 45rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  cursor: pointer;
   text-align: center;
   font-size: 1.5rem;
-  background: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +192,22 @@ ul, li {
           align-items: center;
 }
 
-.projects .project-wrapper .card .card-img {
+.card__side {
+  background: #f1f1f1;
+  border-radius: 1rem;
+  padding: 1rem;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45rem;
+  width: 100%;
+}
+
+.card__side__front .card-img {
   background: url(../image/software.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -198,9 +215,25 @@ ul, li {
   width: 100%;
 }
 
-.projects .project-wrapper .card .card-info {
+.card__side__front .card-info {
   min-height: 50%;
   width: 100%;
+}
+
+.card__side__back {
+  background: #0f0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:hover .card__side__front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:hover .card__side__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
 }
 
 .skills {
@@ -444,7 +477,8 @@ ul, li {
   font-family: inherit;
   margin-top: 1rem;
   padding: 1rem 1.5rem;
-  border: none;
+  border-radius: 3px;
+  border: 3px solid rgba(236, 82, 66, 0.8);
 }
 
 .form__textarea::-webkit-textarea-placeholder {

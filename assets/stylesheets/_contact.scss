@@ -96,7 +96,8 @@
     font-family: inherit;
     margin-top: 1rem;
     padding: 1rem 1.5rem;
-    border: none;
+    border-radius: 3px;
+    border: 3px solid rgba($orange, 0.8);
     &::-webkit-textarea-placeholder {
       font-size: 1.5rem;
       @include responsive(tab){
