@@ -24,6 +24,7 @@
   position: relative;
   height: 45rem;
   perspective: 150rem;
+  -moz-perspective: 150rem;
   cursor: pointer;
   text-align: center;
   font-size: 1.5rem;
@@ -43,9 +44,6 @@
   }
   &__side__front {
     .card-img {
-      background: url(../image/software.jpeg)no-repeat;
-      background-size: cover;
-      background-position: center;
       min-height: 50%;
       width: 100%;
     }
@@ -53,10 +51,44 @@
       min-height: 50%;
       width: 100%;
     }
+    .img-1 {
+      background: url(../image/Geo-search.png)no-repeat;
+    }
+    .img-2 {
+      background: url(../image/software.jpeg)no-repeat;
+      background-position: center;
+    }
+    .img-3 {
+      background: url(../image/Postspot.png)no-repeat;
+    }
+    .img-4 {
+      background: url(../image/Devsummit.png)no-repeat;
+    }
+    .card-img {
+      background-size: cover;
+    }
   }
   &__side__back {
-    background: #0f0;
     transform: rotateY(180deg);
+    @include flexPoint(column, center);
+      a {
+        font-size: 7rem;
+        color: $white;
+      }
+    &-1 {
+      background: linear-gradient(to right bottom,$light-blue, $dark-blue);
+      
+    }
+    &-2 {
+      background: linear-gradient(to right bottom,$light-green, $dark-green);
+    }
+    &-3 {
+      background: linear-gradient(to right bottom,$grey, $dark);
+    }
+    &-4 {
+      background: linear-gradient(to right bottom,$light-orange, $orange);
+    }
+    
   }
   &:hover &__side__front {
     transform: rotateY(180deg);

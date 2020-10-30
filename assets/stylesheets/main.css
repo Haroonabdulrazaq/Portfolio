@@ -174,6 +174,7 @@ ul, li {
   height: 45rem;
   -webkit-perspective: 150rem;
           perspective: 150rem;
+  -moz-perspective: 150rem;
   cursor: pointer;
   text-align: center;
   font-size: 1.5rem;
@@ -208,9 +209,6 @@ ul, li {
 }
 
 .card__side__front .card-img {
-  background: url(../image/software.jpeg) no-repeat;
-  background-size: cover;
-  background-position: center;
   min-height: 50%;
   width: 100%;
 }
@@ -220,10 +218,68 @@ ul, li {
   width: 100%;
 }
 
+.card__side__front .img-1 {
+  background: url(../image/Geo-search.png) no-repeat;
+}
+
+.card__side__front .img-2 {
+  background: url(../image/software.jpeg) no-repeat;
+  background-position: center;
+}
+
+.card__side__front .img-3 {
+  background: url(../image/Postspot.png) no-repeat;
+}
+
+.card__side__front .img-4 {
+  background: url(../image/Devsummit.png) no-repeat;
+}
+
+.card__side__front .card-img {
+  background-size: cover;
+}
+
 .card__side__back {
-  background: #0f0;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__side__back a {
+  font-size: 7rem;
+  color: #ffffff;
+}
+
+.card__side__back-1 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+
+.card__side__back-2 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.card__side__back-3 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#d3d3d3), to(#272a31));
+  background: linear-gradient(to right bottom, #d3d3d3, #272a31);
+}
+
+.card__side__back-4 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#f5d3cf), to(#ec5242));
+  background: linear-gradient(to right bottom, #f5d3cf, #ec5242);
 }
 
 .card:hover .card__side__front {
@@ -326,7 +382,7 @@ ul, li {
 
 .skills .skill span {
   display: inline-block;
-  background: #f57061;
+  background: #ec5242;
   height: 3rem;
   padding: 1rem;
   margin: 0.2rem;
