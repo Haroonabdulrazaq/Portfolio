@@ -137,7 +137,6 @@ ul, li {
   height: auto;
   background: #ffffff;
   padding: 1rem;
-  margin: 5rem 0;
 }
 
 .projects .project-wrapper {
@@ -411,8 +410,9 @@ ul, li {
           align-items: center;
 }
 
-.stranger {
+.section-header {
   font-size: 2.5rem;
+  margin: 2.5rem 0;
   line-height: 1.7;
   background: -webkit-gradient(linear, left top, right top, from(#272a31), to(#ffffff));
   background: linear-gradient(to right, #272a31, #ffffff);
@@ -426,14 +426,16 @@ ul, li {
 }
 
 @media only screen and (min-width: 768px) {
-  .stranger {
+  .section-header {
     font-size: 5rem;
   }
 }
 
-.stranger:hover {
+.section-header:hover {
   -webkit-transform: skew(-5deg, -2deg);
           transform: skew(-5deg, -2deg);
+  -webkit-box-shadow: 2px solid orangered;
+          box-shadow: 2px solid orangered;
 }
 
 .form {
