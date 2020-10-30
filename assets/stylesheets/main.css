@@ -61,8 +61,9 @@ ul, li {
   background: linear-gradient(rgba(0, 0, 0, 0.582) 20%), url("../image/software.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,8 +283,8 @@ ul, li {
 }
 
 .card:hover .card__side__front {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 
 .card:hover .card__side__back {
@@ -412,6 +413,7 @@ ul, li {
 
 .section-header {
   font-size: 2.5rem;
+  font-weight: 500;
   margin: 2.5rem 0;
   line-height: 1.7;
   background: -webkit-gradient(linear, left top, right top, from(#272a31), to(#ffffff));
@@ -420,22 +422,22 @@ ul, li {
   background-clip: text;
   color: transparent;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: .2rem;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 @media only screen and (min-width: 768px) {
   .section-header {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
 .section-header:hover {
-  -webkit-transform: skew(-5deg, -2deg);
-          transform: skew(-5deg, -2deg);
-  -webkit-box-shadow: 2px solid orangered;
-          box-shadow: 2px solid orangered;
+  -webkit-transform: skew(-5deg, -2deg) scale(1.1);
+          transform: skew(-5deg, -2deg) scale(1.1);
+  text-shadow: 1rem 2rem 3rem rgba(236, 82, 66, 0.8);
 }
 
 .form {
@@ -562,6 +564,36 @@ ul, li {
   }
 }
 
+.form .btn-primary {
+  width: 12rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: 0.5px solid rgba(236, 82, 66, 0.8);
+  color: #ec5242;
+  border-radius: .5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.form .btn-primary:hover {
+  background: #ec5242;
+  color: #ffffff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
+          box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.form .btn-primary:active {
+  -webkit-box-shadow: 0 0.5rem 5rem rgba(39, 42, 49, 0.4);
+          box-shadow: 0 0.5rem 5rem rgba(39, 42, 49, 0.4);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .say-hi {
   display: none;
 }
@@ -615,7 +647,8 @@ ul, li {
 
 @media only screen and (min-width: 768px) {
   .footer i {
-    font-size: 5rem;
+    font-size: 4rem;
+    padding: 1.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

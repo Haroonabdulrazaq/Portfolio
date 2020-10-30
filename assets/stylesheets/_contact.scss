@@ -6,6 +6,7 @@
 
 .section-header {
   font-size: 2.5rem;
+  font-weight: 500;
   margin: 2.5rem 0;
   line-height: 1.7;
   background: linear-gradient(to right, $dark, $white );
@@ -13,14 +14,15 @@
           background-clip: text;
   color: transparent;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: .2rem;
-  transition: all .2s;
+  transition: all .2s ease;
   @include responsive(tab) {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   &:hover {
-    transform: skew(-5deg,- 2deg);
-    box-shadow: 2px solid orangered;
+    transform: skew(-5deg,- 2deg) scale(1.1);
+    text-shadow: 1rem 2rem 3rem rgba($orange, .8);
   }
 
 }
@@ -116,7 +118,29 @@
       padding: 1rem;
     }
   }
-
+.btn-primary {
+  width: 12rem;
+  padding: 1rem;
+  cursor: pointer;
+  // outline: rgba($orange, .8);
+  border: .5px solid rgba($orange, .8);
+  color: $orange;
+  border-radius: .5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .5s ease;
+  &:hover {
+    background: $orange;
+    color: $white;
+    box-shadow: 0 1rem 2rem rgba($dark, 0.4);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 .5rem 5rem rgba($dark, 0.4);
+    transform: translateY(0);
+  }
+}
 }
 
 .say-hi {

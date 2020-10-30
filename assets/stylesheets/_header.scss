@@ -3,6 +3,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.582) 20%),url('../image/software.jpeg')no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0,100% 0,100% 86%,0 100%);
   clip-path: polygon(0 0,100% 0,100% 86%,0 100%);
   @include flexPoint(column, space-around);
   .header-text {

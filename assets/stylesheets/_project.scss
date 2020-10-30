@@ -90,7 +90,7 @@
     
   }
   &:hover &__side__front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
   &:hover &__side__back {
     transform: rotateY(0);

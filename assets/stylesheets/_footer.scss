@@ -16,7 +16,8 @@
   i {
     font-size: 3rem;
     @include responsive(tab) {
-      font-size: 5rem;
+      font-size: 4rem;
+      padding: 1.5rem;
     }
   }
 }
