@@ -67,8 +67,9 @@ a {
 
 .navigation__button {
   background: #ffffff;
-  height: 7rem;
-  width: 7rem;
+  height: 3rem;
+  width: 3rem;
+  font-size: 2.3rem;
   position: fixed;
   top: 2.5rem;
   right: 1.5rem;
@@ -78,22 +79,10 @@ a {
           box-shadow: 0 1rem 3rem rgba(39, 42, 49, 0.5);
 }
 
-.navigation__background {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 3rem;
-  right: 2rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
-  background: linear-gradient(to right bottom, #2998ff, #5643fa);
-  z-index: 2;
-}
-
-@media only screen and (min-width: 1500px) {
-  .navigation__background {
-    -webkit-transform: scale(100);
-            transform: scale(100);
+@media only screen and (min-width: 768px) {
+  .navigation__button {
+    height: 5rem;
+    width: 5rem;
   }
 }
 
@@ -104,6 +93,12 @@ a {
   top: 0;
   right: 0;
   z-index: 3;
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
+  opacity: 0;
+  width: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .navigation__list {
@@ -132,7 +127,7 @@ a {
 
 .navigation__link {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #f1f1f1;
   font-weight: 200;
   text-transform: uppercase;
@@ -154,6 +149,17 @@ a {
   color: #ffffff;
   -webkit-transform: translateX(1.5rem);
           transform: translateX(1.5rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 75%;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation__checkbox:checked ~ .navigation__nav {
+    width: 50%;
+  }
 }
 
 .header {
@@ -202,7 +208,7 @@ a {
 
 .header .header-text .header-sub {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 @media only screen and (min-width: 768px) {

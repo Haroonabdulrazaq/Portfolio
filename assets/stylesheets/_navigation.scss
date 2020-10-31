@@ -4,29 +4,34 @@
   }
   &__button {
     background: $white;
-    height: 7rem;
-    width: 7rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.3rem;
     position: fixed;
     top: 2.5rem;
     right: 1.5rem;
     border-radius: 50%;
     z-index: 4;
     box-shadow: 0 1rem 3rem rgba($dark, .5);
-  }
-  &__background {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    position: fixed;
-    top: 3rem;
-    right: 2rem;
-    background:linear-gradient(to right bottom, $light-blue,$dark-blue);
-    z-index: 2;
-    // transform: scale(80);
-    @include responsive(large-screen){
-      transform: scale(100);
+    @include responsive(tab) {
+      height: 5rem;
+      width: 5rem;
     }
   }
+  // &__background {
+  //   width: 6rem;
+  //   height: 6rem;
+  //   border-radius: 50%;
+  //   position: fixed;
+  //   top: 3rem;
+  //   right: 2rem;
+
+  //   z-index: 2;
+  //   // transform: scale(80);
+  //   @include responsive(large-screen){
+  //     // transform: scale(100);
+  //   }
+  // }
   &__nav{
     height: 100vh;
     width: 100%;
@@ -34,6 +39,10 @@
     top: 0;
     right: 0;
     z-index: 3;
+    background:linear-gradient(to right bottom, $light-blue,$dark-blue);
+    opacity: 0;
+     width: 0;
+     transition: all 1s ease;
   }
   &__list {
     position: absolute;
@@ -55,7 +64,7 @@
   }
   &__link {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: $dirty-white;
     font-weight: 200;
     text-transform: uppercase;
@@ -69,6 +78,14 @@
     &:hover {
       color: $white;
       transform: translateX(1.5rem);
+    }
+  }
+
+  &__checkbox:checked ~ &__nav {
+    width: 75%;
+    opacity: 1;
+    @include responsive(tab){
+      width: 50%;
     }
   }
 }
