@@ -1,0 +1,74 @@
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    background: $white;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 2.5rem;
+    right: 1.5rem;
+    border-radius: 50%;
+    z-index: 4;
+    box-shadow: 0 1rem 3rem rgba($dark, .5);
+  }
+  &__background {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+    background:linear-gradient(to right bottom, $light-blue,$dark-blue);
+    z-index: 2;
+    // transform: scale(80);
+    @include responsive(large-screen){
+      transform: scale(100);
+    }
+  }
+  &__nav{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+  &__list {
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    // background: red;
+    text-align: left;
+    @include responsive(desktop){
+      top: 25%;
+      right: 45%;  
+    }
+  }
+  &__item {
+    margin: 2rem 1rem;
+    transition: all .2s ease;
+    &:hover {
+      border-bottom: 2px solid $white;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-size: 2rem;
+    color: $dirty-white;
+    font-weight: 200;
+    text-transform: uppercase;
+    @include responsive(tab){
+      font-size: 3rem;
+    }
+    i {
+      display: inline-block;
+    }
+    transition: all .5s ease;
+    &:hover {
+      color: $white;
+      transform: translateX(1.5rem);
+    }
+  }
+}

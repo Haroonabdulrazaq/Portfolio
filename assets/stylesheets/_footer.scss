@@ -8,11 +8,6 @@
     font-size: 2rem;
   }
   @include flexPoint(row, space-around);
-  a {
-    color:inherit;
-    text-decoration: none;
-    cursor: pointer;
-  }
   i {
     font-size: 3rem;
     @include responsive(tab) {
