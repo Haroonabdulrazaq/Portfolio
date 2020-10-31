@@ -50,20 +50,21 @@
     border-bottom: 3px solid transparent;
     width: 100%;
     display: block;
+    border:  1px solid $light-blue;
     @include responsive(tab){
-      width: 60%;
+      width: 70%;
       font-size: 1.5rem;
     }
     @include responsive(desktop){
-      width: 60%;
+
       font-size: 2rem;
     }
     &:focus {
       outline: none;
-      border-bottom: 3px solid rgba($orange, 0.8);
+      border: 1px solid rgba($light-green, 0.8);
     }
     &:focus:invalid {
-      border-bottom:  3px solid $dark;
+      border:  1px solid $light-blue;
     }
     &::-webkit-input-placeholder {
       color: $grey;
@@ -101,7 +102,7 @@
     margin-top: 1rem;
     padding: 1rem 1.5rem;
     border-radius: 3px;
-    border: 3px solid rgba($orange, 0.8);
+    border: 1px solid rgba($light-blue, 0.8);
     &::-webkit-textarea-placeholder {
       font-size: 1.5rem;
       @include responsive(tab){
@@ -122,16 +123,16 @@
   width: 12rem;
   padding: 1rem;
   cursor: pointer;
-  // outline: rgba($orange, .8);
-  border: .5px solid rgba($orange, .8);
-  color: $orange;
+
+  border: .5px solid rgba($light-blue, .8);
+  color: $light-blue;
   border-radius: .5rem;
   font-size: 1.7rem;
   font-weight: 500;
   text-transform: uppercase;
   transition: all .5s ease;
   &:hover {
-    background: $orange;
+    background: $light-blue;
     color: $white;
     box-shadow: 0 1rem 2rem rgba($dark, 0.4);
     transform: translateY(-2px);

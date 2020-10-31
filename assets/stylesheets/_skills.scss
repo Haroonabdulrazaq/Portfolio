@@ -27,7 +27,7 @@
     }
     span {
       display: inline-block;
-      background: $orange;
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
       height: 3rem;
       padding: 1rem;
       margin: 0.2rem;
