@@ -4,7 +4,7 @@ Portfolio is to showcase my skills and talent in using web technologies,
 It consist of all projects ive built and skills i am comfortable working with.
 
 ## :camera: Screenshot 
-![Screenshot](../assets/image/Portfolio.png)
+![Screenshot](assets/image/portfolio.png)
  
 ## Built With
 

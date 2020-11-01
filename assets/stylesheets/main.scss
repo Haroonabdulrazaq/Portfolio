@@ -40,6 +40,10 @@ body {
   background: $white;
   box-sizing: border-box;
   color: $text-grey;
+  &::selection {
+    color: green;
+    background: red;
+  }
 }
 
 .dark-color {
