@@ -35,7 +35,7 @@
   //     // transform: scale(100);
   //   }
   // }
-  &__nav{
+  &__nav {
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -52,20 +52,21 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      padding-bottom:6rem;
+      padding-bottom: 5rem ;
+      @include responsive(tab){
+        padding-bottom: 2rem;
+      }
       a {
         color: white;
         font-size: 3rem;
         margin: 0 1rem;
       }
-
     }
   }
   &__list {
     position: absolute;
     top: 25%;
     right: 35%;
-
     text-align: left;
     @include responsive(desktop){
       top: 25%;
@@ -86,6 +87,9 @@
     font-weight: 200;
     text-transform: uppercase;
     @include responsive(tab){
+      font-size: 2rem;
+    }
+    @include responsive(desktop){
       font-size: 3rem;
     }
     i {

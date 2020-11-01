@@ -110,7 +110,13 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation__nav .social-icons {
+    padding-bottom: 2rem;
+  }
 }
 
 .navigation__nav .social-icons a {
@@ -154,6 +160,12 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+  .navigation__link {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .navigation__link {
     font-size: 3rem;
   }
@@ -753,7 +765,6 @@ a {
   height: 20vh;
   background: #272a31;
   color: #ffffff;
-  font-size: 1rem;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,18 +782,40 @@ a {
 
 @media only screen and (min-width: 768px) {
   .footer {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
-.footer i {
-  font-size: 3rem;
+.footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 768px) {
-  .footer i {
-    font-size: 4rem;
-    padding: 1.5rem;
+@media only screen and (min-width: 900px) {
+  .footer .social-media {
+    font-size: 2.5rem;
+  }
+}
+
+.footer .back i {
+  font-size: 5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .footer {
+    height: 25vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
