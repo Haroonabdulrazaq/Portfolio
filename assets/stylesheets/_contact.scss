@@ -9,7 +9,7 @@
   font-weight: 500;
   margin: 2.5rem 0;
   line-height: 1.7;
-  background: linear-gradient(to right, $dark, $white );
+  background: linear-gradient(to right bottom, $light-blue, $dark-blue);;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -22,7 +22,7 @@
   }
   &:hover {
     transform: skew(-5deg,- 2deg) scale(1.1);
-    text-shadow: 1rem 2rem 3rem rgba($orange, .8);
+    text-shadow: 0rem 1rem 3rem rgba($dark, .8);
   }
 
 }
@@ -132,7 +132,7 @@
   text-transform: uppercase;
   transition: all .5s ease;
   &:hover {
-    background: $light-blue;
+    background: linear-gradient(to right bottom, $light-blue, $dark-blue);
     color: $white;
     box-shadow: 0 1rem 2rem rgba($dark, 0.4);
     transform: translateY(-2px);

@@ -6,16 +6,19 @@
     background: $white;
     height: 3rem;
     width: 3rem;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     position: fixed;
     top: 2.5rem;
     right: 1.5rem;
     border-radius: 50%;
     z-index: 4;
-    box-shadow: 0 1rem 3rem rgba($dark, .5);
+    box-shadow: 0 .5rem 3rem rgba($dark, .9);
+    text-align: center;
+    cursor: pointer;
     @include responsive(tab) {
       height: 5rem;
       width: 5rem;
+      font-size: 3rem;
     }
   }
   // &__background {
@@ -41,14 +44,14 @@
     z-index: 3;
     background:linear-gradient(to right bottom, $light-blue,$dark-blue);
     opacity: 0;
-     width: 0;
-     transition: all 1s ease;
+    width: 0;
+    transition: all 1s ease;
   }
   &__list {
     position: absolute;
     top: 25%;
     right: 35%;
-    // background: red;
+
     text-align: left;
     @include responsive(desktop){
       top: 25%;

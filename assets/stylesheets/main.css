@@ -69,20 +69,23 @@ a {
   background: #ffffff;
   height: 3rem;
   width: 3rem;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   position: fixed;
   top: 2.5rem;
   right: 1.5rem;
   border-radius: 50%;
   z-index: 4;
-  -webkit-box-shadow: 0 1rem 3rem rgba(39, 42, 49, 0.5);
-          box-shadow: 0 1rem 3rem rgba(39, 42, 49, 0.5);
+  -webkit-box-shadow: 0 0.5rem 3rem rgba(39, 42, 49, 0.9);
+          box-shadow: 0 0.5rem 3rem rgba(39, 42, 49, 0.9);
+  text-align: center;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
   .navigation__button {
     height: 5rem;
     width: 5rem;
+    font-size: 3rem;
   }
 }
 
@@ -164,8 +167,8 @@ a {
 
 .header {
   height: 85vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.582))), url("../image/software.jpeg") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.582) 20%), url("../image/software.jpeg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.582))), url("../image/software.jpeg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.582) 10%), url("../image/software.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -499,6 +502,19 @@ a {
   color: #ffffff;
   font-size: 1.5rem;
   text-align: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.skills .skill span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0.5rem 2rem #272a31;
+          box-shadow: 0 0.5rem 2rem #272a31;
+  border: 1px solid #2998ff;
+  background: #ffffff;
+  color: #2998ff;
 }
 
 .contact-form {
@@ -524,8 +540,8 @@ a {
   font-weight: 500;
   margin: 2.5rem 0;
   line-height: 1.7;
-  background: -webkit-gradient(linear, left top, right top, from(#272a31), to(#ffffff));
-  background: linear-gradient(to right, #272a31, #ffffff);
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -545,7 +561,7 @@ a {
 .section-header:hover {
   -webkit-transform: skew(-5deg, -2deg) scale(1.1);
           transform: skew(-5deg, -2deg) scale(1.1);
-  text-shadow: 1rem 2rem 3rem rgba(236, 82, 66, 0.8);
+  text-shadow: 0rem 1rem 3rem rgba(39, 42, 49, 0.8);
 }
 
 .form {
@@ -687,7 +703,8 @@ a {
 }
 
 .form .btn-primary:hover {
-  background: #2998ff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
   color: #ffffff;
   -webkit-box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
           box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
