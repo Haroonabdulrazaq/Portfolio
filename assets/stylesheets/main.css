@@ -104,6 +104,21 @@ a {
   transition: all 1s ease;
 }
 
+.navigation__nav .social-icons {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 6rem;
+}
+
+.navigation__nav .social-icons a {
+  color: white;
+  font-size: 3rem;
+  margin: 0 1rem;
+}
+
 .navigation__list {
   position: absolute;
   top: 25%;
