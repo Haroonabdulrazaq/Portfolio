@@ -100,8 +100,8 @@ a {
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
   opacity: 0;
   width: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
 }
 
 .navigation__nav .social-icons {
@@ -410,13 +410,13 @@ a {
 }
 
 .card__side__back-3 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#d3d3d3), to(#272a31));
-  background: linear-gradient(to right bottom, #d3d3d3, #272a31);
+  background: -webkit-gradient(linear, left top, right bottom, from(#d789d7), to(#52057b));
+  background: linear-gradient(to right bottom, #d789d7, #52057b);
 }
 
 .card__side__back-4 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#f5d3cf), to(#ec5242));
-  background: linear-gradient(to right bottom, #f5d3cf, #ec5242);
+  background: -webkit-gradient(linear, left top, right bottom, from(#e89f71), to(#aa4a30));
+  background: linear-gradient(to right bottom, #e89f71, #aa4a30);
 }
 
 .card:hover .card__side__front {
