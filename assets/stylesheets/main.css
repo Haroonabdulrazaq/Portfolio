@@ -20,16 +20,6 @@ body {
   color: #0f0f0fd2;
 }
 
-body::-moz-selection {
-  color: green;
-  background: red;
-}
-
-body::selection {
-  color: green;
-  background: red;
-}
-
 .dark-color {
   color: #272a31;
 }
