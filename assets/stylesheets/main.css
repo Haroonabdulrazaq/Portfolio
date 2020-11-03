@@ -14,7 +14,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  background: #ffffff;
+  background: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #0f0f0fd2;
@@ -29,7 +29,7 @@ body {
 }
 
 .white-color {
-  color: #ffffff;
+  color: #fff;
 }
 
 .orange-border {
@@ -41,7 +41,8 @@ body {
           box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
 }
 
@@ -52,7 +53,7 @@ a {
 }
 
 .main {
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -66,7 +67,7 @@ a {
 }
 
 .navigation__button {
-  background: #ffffff;
+  background: #fff;
   height: 3rem;
   width: 3rem;
   font-size: 2.2rem;
@@ -91,7 +92,6 @@ a {
 
 .navigation__nav {
   height: 100vh;
-  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
@@ -100,8 +100,8 @@ a {
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
   opacity: 0;
   width: 0;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .navigation__nav .social-icons {
@@ -141,12 +141,12 @@ a {
 
 .navigation__item {
   margin: 2rem 1rem;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .navigation__item:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
 }
 
 .navigation__link {
@@ -155,8 +155,8 @@ a {
   color: #f1f1f1;
   font-weight: 200;
   text-transform: uppercase;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media only screen and (min-width: 768px) {
@@ -176,7 +176,7 @@ a {
 }
 
 .navigation__link:hover {
-  color: #ffffff;
+  color: #fff;
   -webkit-transform: translateX(1.5rem);
           transform: translateX(1.5rem);
 }
@@ -255,7 +255,7 @@ a {
 
 .header i {
   font-size: 5rem;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -273,7 +273,7 @@ a {
 
 .projects {
   height: auto;
-  background: #ffffff;
+  background: #fff;
   padding: 1rem;
 }
 
@@ -334,19 +334,14 @@ a {
   background: #f1f1f1;
   border-radius: 1rem;
   padding: 1rem;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
   height: 45rem;
-  width: 100%;
-}
-
-.card__side__front .card-img {
-  min-height: 50%;
   width: 100%;
 }
 
@@ -373,6 +368,8 @@ a {
 }
 
 .card__side__front .card-img {
+  min-height: 50%;
+  width: 100%;
   background-size: cover;
 }
 
@@ -396,7 +393,7 @@ a {
 
 .card__side__back a {
   font-size: 7rem;
-  color: #ffffff;
+  color: #fff;
 }
 
 .card__side__back-1 {
@@ -482,7 +479,7 @@ a {
 }
 
 .skills .skill {
-  background: #ffffff;
+  background: #fff;
   max-width: 40vh;
   min-height: 20vh;
   padding: 1rem;
@@ -525,12 +522,12 @@ a {
   padding: 1rem;
   margin: 0.2rem;
   padding-bottom: 3rem;
-  border-radius: .5rem;
-  color: #ffffff;
+  border-radius: 0.5rem;
+  color: #fff;
   font-size: 1.5rem;
   text-align: center;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 
@@ -540,13 +537,13 @@ a {
   -webkit-box-shadow: 0 0.5rem 2rem #272a31;
           box-shadow: 0 0.5rem 2rem #272a31;
   border: 1px solid #2998ff;
-  background: #ffffff;
+  background: #fff;
   color: #2998ff;
 }
 
 .contact-form {
   min-height: 50vh;
-  background: #ffffff;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,9 +571,9 @@ a {
   color: transparent;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .2rem;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 @media only screen and (min-width: 768px) {
@@ -588,7 +585,7 @@ a {
 .section-header:hover {
   -webkit-transform: skew(-5deg, -2deg) scale(1.1);
           transform: skew(-5deg, -2deg) scale(1.1);
-  text-shadow: 0rem 1rem 3rem rgba(39, 42, 49, 0.8);
+  text-shadow: 0 1rem 3rem rgba(39, 42, 49, 0.8);
 }
 
 .form {
@@ -614,8 +611,6 @@ a {
   font-family: inherit;
   color: inherit;
   border-radius: 2px;
-  border: none;
-  border-bottom: 3px solid transparent;
   width: 100%;
   display: block;
   border: 1px solid #2998ff;
@@ -634,15 +629,6 @@ a {
   }
 }
 
-.form__input:focus {
-  outline: none;
-  border: 1px solid rgba(126, 213, 111, 0.8);
-}
-
-.form__input:focus:invalid {
-  border: 1px solid #2998ff;
-}
-
 .form__input::-webkit-input-placeholder {
   color: #d3d3d3;
   font-size: 1.5rem;
@@ -654,14 +640,23 @@ a {
   }
 }
 
+.form__input:focus {
+  outline: none;
+  border: 1px solid rgba(126, 213, 111, 0.8);
+}
+
+.form__input:focus:invalid {
+  border: 1px solid #2998ff;
+}
+
 .form__label {
   cursor: pointer;
   font-size: 1.2rem;
   margin-left: 1.7rem;
-  margin-top: .7rem;
+  margin-top: 0.7rem;
   display: block;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -704,7 +699,7 @@ a {
 
 .form__textarea:focus {
   outline: inherit;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -721,18 +716,18 @@ a {
   cursor: pointer;
   border: 0.5px solid rgba(41, 152, 255, 0.8);
   color: #2998ff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.7rem;
   font-weight: 500;
   text-transform: uppercase;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .form .btn-primary:hover {
   background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
-  color: #ffffff;
+  color: #fff;
   -webkit-box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
           box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
   -webkit-transform: translateY(-2px);
@@ -764,7 +759,7 @@ a {
 .footer {
   height: 20vh;
   background: #272a31;
-  color: #ffffff;
+  color: #fff;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;

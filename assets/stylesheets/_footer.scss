@@ -3,23 +3,30 @@
   background: $dark;
   color: $white;
   padding: 1rem;
+
   @include flexPoint(row, space-around);
+
   @include responsive(tab) {
     font-size: 1.5rem;
   }
+
   .social-media {
     @include flexPoint(row, space-around);
+
     flex-wrap: wrap;
+
     @include responsive(desktop) {
       font-size: 2.5rem;
     }
   }
+
   .back {
     i {
       font-size: 5rem;
     }
   }
+
   @include responsive(desktop) {
     height: 25vh;
-   }
+  }
 }

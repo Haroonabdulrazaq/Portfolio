@@ -1,11 +1,13 @@
-@mixin responsive($breakpoint) { 
+@mixin responsive($breakpoint) {
   @if ($breakpoint == tab) {
-    @media only screen and (min-width: 768px) { @content }
+    @media only screen and (min-width: 768px) { @content; }
   }
+
   @if ($breakpoint == desktop) {
-    @media only screen and (min-width: 900px) { @content }
+    @media only screen and (min-width: 900px) { @content; }
   }
+
   @if ($breakpoint == large-screen) {
-    @media only screen and (min-width: 1500px) { @content }
+    @media only screen and (min-width: 1500px) { @content; }
   }
 }

@@ -2,17 +2,20 @@
   height: auto;
   background: $white;
   padding: 1rem;
+
   .project-wrapper {
     display: grid;
     grid-template-rows: 45rem 45rem 45rem 45rem;
     grid-template-columns: 1fr;
     grid-gap: 2.5rem 0;
-    @include responsive(tab){
+
+    @include responsive(tab) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 45rem 45rem;
       grid-gap: 1rem;
     }
-    @include responsive(desktop){
+
+    @include responsive(desktop) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 45rem;
     }
@@ -29,11 +32,12 @@
   font-size: 1.5rem;
 
   @include flexPoint(column, space-between);
+
   &__side {
     background: $dirty-white;
     border-radius: 1rem;
     padding: 1rem;
-    transition: all .8s ease;
+    transition: all 0.8s ease;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -41,57 +45,68 @@
     height: 45rem;
     width: 100%;
   }
+
   &__side__front {
-    .card-img {
-      min-height: 50%;
-      width: 100%;
-    }
     .card-info {
       min-height: 50%;
       width: 100%;
     }
+
     .img-1 {
-      background: url(../image/Geo-search.png)no-repeat;
+      background: url(../image/Geo-search.png) no-repeat;
     }
+
     .img-2 {
-      background: url(../image/software.jpeg)no-repeat;
+      background: url(../image/software.jpeg) no-repeat;
       background-position: center;
     }
+
     .img-3 {
-      background: url(../image/Postspot.png)no-repeat;
+      background: url(../image/Postspot.png) no-repeat;
     }
+
     .img-4 {
-      background: url(../image/Devsummit.png)no-repeat;
+      background: url(../image/Devsummit.png) no-repeat;
     }
+
     .card-img {
+      min-height: 50%;
+      width: 100%;
       background-size: cover;
     }
   }
+
   &__side__back {
     transform: rotateY(180deg);
+
     @include flexPoint(column, center);
-      a {
-        font-size: 7rem;
-        color: $white;
-      }
+
+    a {
+      font-size: 7rem;
+      color: $white;
+    }
+
     &-1 {
-      background: linear-gradient(to right bottom,$light-blue, $dark-blue);
-      
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
     }
+
     &-2 {
-      background: linear-gradient(to right bottom,$light-green, $dark-green);
+      background: linear-gradient(to right bottom, $light-green, $dark-green);
     }
+
     &-3 {
-      background: linear-gradient(to right bottom,$light-brown, $dark-brown);
+      background: linear-gradient(to right bottom, $light-brown, $dark-brown);
     }
+
     &-4 {
-      background: linear-gradient(to right bottom,$light-purple, $dark-purple);
+      background: linear-gradient(to right bottom, $light-purple, $dark-purple);
     }
-    
   }
+
   &:hover &__side__front {
     transform: rotateY(-180deg);
   }
+
   &:hover &__side__back {
     transform: rotateY(0);
   }
