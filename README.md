@@ -54,7 +54,7 @@ $ cd Portfolio
 - [Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript)
 - [Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)
 
-## Deploy
+## Deploy 🚀
 This project is deploy to Netlify and Github pages
 
 ## Author
