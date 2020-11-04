@@ -1,7 +1,7 @@
 ### Portfolio
 
-Portfolio is to showcase my skills and talent in using web technologies,
-It consist of all projects ive built and skills i am comfortable working with.
+Portfolio showcase my skills in web technologies,
+It consist of all projects i have built and skills i am comfortable working with.
 
 ## :camera: Screenshot 
 ![screenshot](./assets/image/portfolio.png)
@@ -25,16 +25,10 @@ It consist of all projects ive built and skills i am comfortable working with.
 - Use semantic HTML tags.
 - Use CSS selectors correctly.
 - Use HTML elements box model (margin, padding, width, height).
-- Use industry-standard tools (flexbox) to place elements in the page.
+- Use industry-standard tools (flexbox & grid) to place elements in the page.
 - Ability to create UIs adaptable to different screen sizes using mediaqueries.
 - Apply front-end best practices.
 - Ability to create UIs adjusted to given designs.
-- Strong English written and verbal communication.
-- Ability to communicate information effectively to technical and non-technical people.
-- Ability to translate business requirements into software solutions.
-- Ability to work well in a fast-paced environment under deadlines.
-- Ability to perform tasks and complete projects with minimal supervision.
-
 
 # Getting Started 🚀
 
@@ -51,15 +45,17 @@ $ git clone https://github.com/Haroonabdulrazaq/Portfolio.git
 # Go into the repository
 $ cd Portfolio
 
+- Lunch in Editor of choice.
+
 ```
 ## Testing
+
 - HTML Validator
-- Stickler
 - Stylelint
+- Eslint
 
 ## Deploy
-This project is deploy to Netlify and HGithub pages
-
+This project is deploy to Netlify and Github pages
 
 ## Author
 
