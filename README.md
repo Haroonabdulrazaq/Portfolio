@@ -45,14 +45,14 @@ $ git clone https://github.com/Haroonabdulrazaq/Portfolio.git
 # Go into the repository
 $ cd Portfolio
 
-- Lunch in Editor of choice.
+- Launch in Editor of choice.
 
 ```
 ## Testing
 
-- HTML Validator
-- Stylelint
-- Eslint
+- [HTML Validator](https://validator.w3.org/)
+- [Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript)
+- [Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)
 
 ## Deploy
 This project is deploy to Netlify and Github pages
