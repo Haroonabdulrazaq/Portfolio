@@ -1,0 +1,96 @@
+@import "mediaQuery";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+$dark:#272a31;
+$grey: #d3d3d3;
+$text-grey: #0f0f0fd2;
+
+$light-purple: #d789d7;
+$dark-purple: #52057b;
+
+$light-brown: #e89f71;
+$dark-brown: #aa4a30;
+
+$light-green:#7ed56f;
+$dark-green: #28b485;
+
+$light-blue:#2998ff;
+$dark-blue:#5643fa;
+
+$orange: #ec5242;
+$light-orange: #f5d3cf;
+
+$dirty-white: #f1f1f1;
+$white: #fff;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  background: $white;
+  box-sizing: border-box;
+  color: $text-grey;
+}
+
+.dark-color {
+  color: $dark;
+}
+
+.grey-color {
+  color: $grey;
+}
+
+.white-color {
+  color: $white;
+}
+
+.orange-border {
+  border: $orange;
+}
+
+.shadow {
+  box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
+}
+
+@mixin flexPoint($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main {
+  padding: 0 0.5rem;
+
+  @include responsive(desktop) {
+    padding: 0 2rem;
+  }
+}
+
+@import "navigation";
+@import "header";
+@import "project";
+@import "skills";
+@import "contact";
+@import "footer";
