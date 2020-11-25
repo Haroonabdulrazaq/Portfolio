@@ -23,20 +23,6 @@
       font-size: 3rem;
     }
   }
-  // &__background {
-  //   width: 6rem;
-  //   height: 6rem;
-  //   border-radius: 50%;
-  //   position: fixed;
-  //   top: 3rem;
-  //   right: 2rem;
-
-  //   z-index: 2;
-  //   // transform: scale(80);
-  //   @include responsive(large-screen){
-  //     // transform: scale(100);
-  //   }
-  // }
   &__nav {
     height: 100vh;
     position: fixed;
@@ -71,8 +57,10 @@
   &__list {
     position: absolute;
     top: 25%;
-    right: 35%;
+    right: 30%;
     text-align: left;
+    font-size: 1.7rem;
+    // display: none;
 
     @include responsive(desktop) {
       top: 25%;
@@ -90,8 +78,7 @@
   }
 
   &__link {
-    display: inline-block;
-    font-size: 1.7rem;
+    // font-size: 1.7rem;
     color: $dirty-white;
     font-weight: 200;
     text-transform: uppercase;
@@ -119,9 +106,11 @@
   &__checkbox:checked ~ &__nav {
     width: 75%;
     opacity: 1;
-
     @include responsive(tab) {
       width: 50%;
     }
   }
+  // &__checkbox:checked ~ &__list {
+  //   display: inline-block;
+  // }
 }
