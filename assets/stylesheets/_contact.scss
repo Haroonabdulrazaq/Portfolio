@@ -48,10 +48,10 @@
     padding: 1rem 1.5rem;
     font-family: inherit;
     color: inherit;
-    border-radius: 2px;
+    border-radius: 0.2rem;
     width: 100%;
     display: block;
-    border: 1px solid $light-blue;
+    border: 0.1rem solid $light-blue;
 
     @include responsive(tab) {
       width: 70%;
@@ -73,11 +73,11 @@
 
     &:focus {
       outline: none;
-      border: 1px solid rgba($light-green, 0.8);
+      border: 0.1rem solid rgba($light-green, 0.8);
     }
 
     &:focus:invalid {
-      border: 1px solid $light-blue;
+      border: 0.1rem solid $light-blue;
     }
   }
 
@@ -109,8 +109,8 @@
     font-family: inherit;
     margin-top: 1rem;
     padding: 1rem 1.5rem;
-    border-radius: 3px;
-    border: 1px solid rgba($light-blue, 0.8);
+    border-radius: 0.3rem;
+    border: 0.1rem solid rgba($light-blue, 0.8);
 
     &::-webkit-textarea-placeholder {
       font-size: 1.5rem;
@@ -148,7 +148,7 @@
       background: linear-gradient(to right bottom, $light-blue, $dark-blue);
       color: $white;
       box-shadow: 0 1rem 2rem rgba($dark, 0.4);
-      transform: translateY(-2px);
+      transform: translateY(-0.2rem);
     }
 
     &:active {

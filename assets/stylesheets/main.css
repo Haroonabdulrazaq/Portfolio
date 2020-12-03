@@ -146,7 +146,7 @@ a {
 }
 
 .navigation__item:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 0.2rem solid #fff;
 }
 
 .navigation__link {
@@ -628,7 +628,7 @@ a {
           transform: scale(1.1);
   -webkit-box-shadow: 0 0.5rem 2rem #272a31;
           box-shadow: 0 0.5rem 2rem #272a31;
-  border: 1px solid #2998ff;
+  border: 0.1rem solid #2998ff;
   background: #fff;
   color: #2998ff;
 }
@@ -702,10 +702,10 @@ a {
   padding: 1rem 1.5rem;
   font-family: inherit;
   color: inherit;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   width: 100%;
   display: block;
-  border: 1px solid #2998ff;
+  border: 0.1rem solid #2998ff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -734,11 +734,11 @@ a {
 
 .form__input:focus {
   outline: none;
-  border: 1px solid rgba(126, 213, 111, 0.8);
+  border: 0.1rem solid rgba(126, 213, 111, 0.8);
 }
 
 .form__input:focus:invalid {
-  border: 1px solid #2998ff;
+  border: 0.1rem solid #2998ff;
 }
 
 .form__label {
@@ -775,8 +775,8 @@ a {
   font-family: inherit;
   margin-top: 1rem;
   padding: 1rem 1.5rem;
-  border-radius: 3px;
-  border: 1px solid rgba(41, 152, 255, 0.8);
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(41, 152, 255, 0.8);
 }
 
 .form__textarea::-webkit-textarea-placeholder {
@@ -822,8 +822,8 @@ a {
   color: #fff;
   -webkit-box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
           box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
 }
 
 .form .btn-primary:active {
