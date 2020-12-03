@@ -4,14 +4,14 @@
  
   .Ellipse-3 {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 8rem;
+    height: 8rem;
     right: 2rem;
     top: 14rem;
     @include responsive(desktop){
       position: absolute;
-      width: 100px;
-      height: 100px;
+      width: 10rem;
+      height: 10rem;
       right: 3rem;
       top: 14rem;
     }
@@ -34,18 +34,48 @@
 
   .Ellipse-4 {
     position: absolute;
-    width: 47px;
-    height: 47px;
-    left: 89px;
-    bottom: 85px;
+    width: 4.7rem;
+    height: 4.7rem;
+    left: 8.9rem;
+    bottom: 8.5rem;
   }
+  
+  .Ellipse-5 {
+    position: absolute;
+    width: 2.3rem;
+    height: 2.3rem;
+    right: 5.5rem;
+    bottom: 17.5rem;
+    @include responsive(desktop){
+      right: 14.5rem;
+      bottom: 17.5rem;
+    }
+  }
+
+  .Ellipse-13 {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 1.06rem;
+    bottom: 27.8rem;
+  }
+
+  .Ellipse-12 {
+    position: absolute;
+    width: 3.69rem;
+    height: 1.84rem;
+    left: 1.06rem;
+    bottom: 30.7rem;
+  }
+
    .Rectangle-5 {
     position: absolute;
-    width: 100.41px;
-    height: 55.87px;
+    width: 10rem;
+    height: 5.5rem;
     left: 8.9rem;
     bottom: 10.5rem;
   }
+
   .header-wrapper {
     height: 85vh;
     border: 1px solid cornflowerblue;
