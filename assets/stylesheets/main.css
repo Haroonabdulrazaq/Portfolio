@@ -235,7 +235,7 @@ a {
   width: 4.7rem;
   height: 4.7rem;
   left: 8.9rem;
-  bottom: 8.5rem;
+  bottom: 9.5rem;
 }
 
 .header .Ellipse-5 {
@@ -274,7 +274,7 @@ a {
   width: 10rem;
   height: 5.5rem;
   left: 8.9rem;
-  bottom: 10.5rem;
+  bottom: 11.5rem;
 }
 
 .header .header-wrapper {
@@ -344,6 +344,22 @@ a {
   .header .header-wrapper .header-sub {
     font-size: 5rem;
   }
+}
+
+.header .header-wrapper .social-media {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header .header-wrapper .social-media h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.header .header-wrapper .social-media a {
+  margin: 1rem;
+  font-size: 2rem;
 }
 
 .projects {
