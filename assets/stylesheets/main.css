@@ -17,7 +17,7 @@ body {
   background: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #0f0f0fd2;
+  color: #344563;
 }
 
 .dark-color {
@@ -401,18 +401,18 @@ a {
 }
 
 .card__side__back-2 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
-  background: linear-gradient(to right bottom, #7ed56f, #28b485);
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .card__side__back-3 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#e89f71), to(#aa4a30));
-  background: linear-gradient(to right bottom, #e89f71, #aa4a30);
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .card__side__back-4 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#d789d7), to(#52057b));
-  background: linear-gradient(to right bottom, #d789d7, #52057b);
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .card:hover .card__side__front {
