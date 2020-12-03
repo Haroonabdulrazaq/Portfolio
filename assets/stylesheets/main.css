@@ -348,8 +348,9 @@ a {
 
 .projects {
   height: auto;
-  background: #fff;
+  background: #E5E5E5;
   padding: 1rem;
+  padding-bottom: 10rem;
 }
 
 .projects .project-wrapper {
@@ -406,7 +407,7 @@ a {
 }
 
 .card__side {
-  background: #E5E5E5;
+  background: #fff;
   border-radius: 1rem;
   padding: 1rem;
   -webkit-transition: all 0.8s ease;
@@ -502,7 +503,7 @@ a {
 }
 
 .skills {
-  background: #E5E5E5;
+  background: #fff;
   min-height: 75vh;
   padding: 1rem;
   display: -webkit-box;
@@ -554,7 +555,7 @@ a {
 }
 
 .skills .skill {
-  background: #fff;
+  background: #E5E5E5;
   max-width: 40vh;
   min-height: 20vh;
   padding: 1rem;
@@ -618,7 +619,7 @@ a {
 
 .contact-form {
   min-height: 50vh;
-  background: #fff;
+  background: #E5E5E5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
