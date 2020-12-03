@@ -31,13 +31,13 @@ $dark-blue:#5643fa;
 $orange: #ec5242;
 $light-orange: #f5d3cf;
 
-$dirty-white: #f1f1f1;
+$dirty-white: #E5E5E5;//#f1f1f1;
 $white: #fff;
 
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  background: $white;
+  background: $dirty-white;
   box-sizing: border-box;
   color: $text-grey;
 }

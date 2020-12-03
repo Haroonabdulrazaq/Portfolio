@@ -1,13 +1,15 @@
 .header {
-  // background: url("../image/Ellipse\ 11.png")no-repeat;
-  // background: url("../image/Ellipse\ 3.png")no-repeat;
- 
+  text-align: center;
+  background: $white;
+  border-radius: 0 0 0 5rem;
+
   .Ellipse-3 {
     position: absolute;
     width: 8rem;
     height: 8rem;
     right: 2rem;
-    top: 14rem;
+    bottom: 14rem;
+
     @include responsive(desktop){
       position: absolute;
       width: 10rem;
@@ -25,8 +27,8 @@
     top: 2rem;
 @include responsive(desktop){
     position: absolute;
-    width: 8rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     left: 1.3rem;
     top: 2rem;
     }
@@ -78,17 +80,40 @@
 
   .header-wrapper {
     height: 85vh;
-    border: 1px solid cornflowerblue;
     @include flexPoint(column, center);
+    z-index: 2;
     .text-wrapper {
-      width: 70%;
+      width: 90%;
       height: 50vh;
-      border: 1px solid #0f0;
       @include responsive(tab){
-        
+        width: 70%;
       }
       @include responsive(desktop){
+        width: 60%;
+      }
+    }
+    .header-name {
+      font-size: 2rem;
+      font-weight: 700;
+      @include responsive(tab) {
+        font-size: 4rem;
+      }
 
+      @include responsive(large-screen) {
+        font-size: 9rem;
+      }
+    }
+
+    .header-sub {
+      font-size: 1.5rem;
+      font-weight: 200;
+
+      @include responsive(tab) {
+        font-size: 2.5rem;
+      }
+
+      @include responsive(large-screen) {
+        font-size: 5rem;
       }
     }
   }

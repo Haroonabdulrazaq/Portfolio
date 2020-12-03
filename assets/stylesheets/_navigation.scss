@@ -80,12 +80,10 @@
     color: $dirty-white;
     font-weight: 200;
     text-transform: uppercase;
-
+    transition: all 0.5s ease;
     i {
       display: inline-block;
     }
-
-    transition: all 0.5s ease;
 
     &:hover {
       color: $white;
@@ -103,9 +101,9 @@
       font-size: 2.3rem;
     }
 
-    @include responsive(tab) {
+    @include responsive(desktop) {
       width: 50%;
-      font-size: 3rem;
+       font-size: 3rem;
     }
   }
 }

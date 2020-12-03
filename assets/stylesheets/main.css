@@ -14,7 +14,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  background: #fff;
+  background: #E5E5E5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #344563;
@@ -150,7 +150,7 @@ a {
 }
 
 .navigation__link {
-  color: #f1f1f1;
+  color: #E5E5E5;
   font-weight: 200;
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
@@ -180,11 +180,17 @@ a {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .navigation__checkbox:checked ~ .navigation__nav {
     width: 50%;
     font-size: 3rem;
   }
+}
+
+.header {
+  text-align: center;
+  background: #fff;
+  border-radius: 0 0 0 5rem;
 }
 
 .header .Ellipse-3 {
@@ -192,7 +198,7 @@ a {
   width: 8rem;
   height: 8rem;
   right: 2rem;
-  top: 14rem;
+  bottom: 14rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -216,8 +222,8 @@ a {
 @media only screen and (min-width: 900px) {
   .header .Ellipse-11 {
     position: absolute;
-    width: 8rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     left: 1.3rem;
     top: 2rem;
   }
@@ -272,7 +278,6 @@ a {
 
 .header .header-wrapper {
   height: 85vh;
-  border: 1px solid cornflowerblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,12 +291,58 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .header .header-wrapper .text-wrapper {
-  width: 70%;
+  width: 90%;
   height: 50vh;
-  border: 1px solid #0f0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .header-wrapper .text-wrapper {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header .header-wrapper .text-wrapper {
+    width: 60%;
+  }
+}
+
+.header .header-wrapper .header-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .header-wrapper .header-name {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .header .header-wrapper .header-name {
+    font-size: 9rem;
+  }
+}
+
+.header .header-wrapper .header-sub {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .header-wrapper .header-sub {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .header .header-wrapper .header-sub {
+    font-size: 5rem;
+  }
 }
 
 .projects {
@@ -354,7 +405,7 @@ a {
 }
 
 .card__side {
-  background: #f1f1f1;
+  background: #E5E5E5;
   border-radius: 1rem;
   padding: 1rem;
   -webkit-transition: all 0.8s ease;
@@ -450,7 +501,7 @@ a {
 }
 
 .skills {
-  background: #f1f1f1;
+  background: #E5E5E5;
   min-height: 50vh;
   padding: 1rem;
   display: -webkit-box;
