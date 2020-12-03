@@ -99,9 +99,10 @@ a {
   background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
   opacity: 0;
+  font-size: 0;
   width: 0;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navigation__nav .social-icons {
@@ -121,7 +122,6 @@ a {
 
 .navigation__nav .social-icons a {
   color: white;
-  font-size: 3rem;
   margin: 0 1rem;
 }
 
@@ -130,7 +130,6 @@ a {
   top: 25%;
   right: 30%;
   text-align: left;
-  font-size: 1.7rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -158,18 +157,6 @@ a {
   transition: all 0.5s ease;
 }
 
-@media only screen and (min-width: 768px) {
-  .navigation__link {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .navigation__link {
-    font-size: 3rem;
-  }
-}
-
 .navigation__link i {
   display: inline-block;
 }
@@ -183,11 +170,20 @@ a {
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 75%;
   opacity: 1;
+  font-size: 1.7rem;
 }
 
 @media only screen and (min-width: 768px) {
   .navigation__checkbox:checked ~ .navigation__nav {
     width: 50%;
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation__checkbox:checked ~ .navigation__nav {
+    width: 50%;
+    font-size: 3rem;
   }
 }
 
