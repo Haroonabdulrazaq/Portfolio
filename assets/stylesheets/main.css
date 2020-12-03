@@ -14,7 +14,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  background: #E5E5E5;
+  background: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #344563;
@@ -191,6 +191,7 @@ a {
   text-align: center;
   background: #fff;
   border-radius: 0 0 0 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .header .Ellipse-3 {
@@ -502,7 +503,7 @@ a {
 
 .skills {
   background: #E5E5E5;
-  min-height: 50vh;
+  min-height: 75vh;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;

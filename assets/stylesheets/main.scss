@@ -37,7 +37,7 @@ $white: #fff;
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  background: $dirty-white;
+  background: $white;
   box-sizing: border-box;
   color: $text-grey;
 }
@@ -84,7 +84,7 @@ a {
   padding: 0 0.5rem;
 
   @include responsive(desktop) {
-    padding: 0 2rem;
+   padding: 0 2rem;
   }
 }
 
