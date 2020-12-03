@@ -45,7 +45,7 @@ $ git clone https://github.com/Haroonabdulrazaq/Portfolio.git
 # Go into the repository
 $ cd Portfolio
 
-- Launch in Editor of choice.
+$ npm install
 
 ```
 ## Testing

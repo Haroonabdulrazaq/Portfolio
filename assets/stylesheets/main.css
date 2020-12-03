@@ -17,7 +17,7 @@ body {
   background: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #0f0f0fd2;
+  color: #344563;
 }
 
 .dark-color {
@@ -99,9 +99,10 @@ a {
   background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
   opacity: 0;
+  font-size: 0;
   width: 0;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navigation__nav .social-icons {
@@ -126,14 +127,13 @@ a {
 
 .navigation__nav .social-icons a {
   color: white;
-  font-size: 3rem;
   margin: 0 1rem;
 }
 
 .navigation__list {
   position: absolute;
   top: 25%;
-  right: 35%;
+  right: 30%;
   text-align: left;
 }
 
@@ -155,25 +155,11 @@ a {
 }
 
 .navigation__link {
-  display: inline-block;
-  font-size: 1.7rem;
   color: #f1f1f1;
   font-weight: 200;
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-@media only screen and (min-width: 768px) {
-  .navigation__link {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .navigation__link {
-    font-size: 3rem;
-  }
 }
 
 .navigation__link i {
@@ -189,11 +175,20 @@ a {
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 75%;
   opacity: 1;
+  font-size: 1.7rem;
 }
 
 @media only screen and (min-width: 768px) {
   .navigation__checkbox:checked ~ .navigation__nav {
     width: 50%;
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation__checkbox:checked ~ .navigation__nav {
+    width: 50%;
+    font-size: 3rem;
   }
 }
 
@@ -402,18 +397,18 @@ a {
 }
 
 .card__side__back-2 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
-  background: linear-gradient(to right bottom, #7ed56f, #28b485);
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .card__side__back-3 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#e89f71), to(#aa4a30));
-  background: linear-gradient(to right bottom, #e89f71, #aa4a30);
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .card__side__back-4 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#d789d7), to(#52057b));
-  background: linear-gradient(to right bottom, #d789d7, #52057b);
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .card:hover .card__side__front {
