@@ -1,55 +1,65 @@
 .header {
-  height: 85vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.582) 10%), url('../image/software.jpeg') no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-
-  @include flexPoint(column, space-around);
-
-  .header-text {
-    padding: 1rem;
-
-    .header-name {
-      font-size: 4rem;
-      font-weight: 700;
-
-      @include responsive(tab) {
-        font-size: 5rem;
-      }
-
-      @include responsive(large-screen) {
-        font-size: 9rem;
-      }
-    }
-
-    .header-sub {
-      font-size: 1.5rem;
-      font-weight: 200;
-
-      @include responsive(tab) {
-        font-size: 2.5rem;
-      }
-
-      @include responsive(large-screen) {
-        font-size: 5rem;
-      }
+  // background: url("../image/Ellipse\ 11.png")no-repeat;
+  // background: url("../image/Ellipse\ 3.png")no-repeat;
+ 
+  .Ellipse-3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 2rem;
+    top: 14rem;
+    @include responsive(desktop){
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      right: 3rem;
+      top: 14rem;
     }
   }
 
-  i {
-    font-size: 5rem;
-    color: $white;
-    cursor: pointer;
-
-    @include responsive(tab) {
-      font-size: 8rem;
+  .Ellipse-11 {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 1.6rem;
+    top: 2rem;
+@include responsive(desktop){
+    position: absolute;
+    width: 8rem;
+    height: 4rem;
+    left: 1.3rem;
+    top: 2rem;
     }
+  }
 
-    @include responsive(large-screen) {
-      font-size: 12rem;
+  .Ellipse-4 {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    left: 89px;
+    bottom: 85px;
+  }
+   .Rectangle-5 {
+    position: absolute;
+    width: 100.41px;
+    height: 55.87px;
+    left: 8.9rem;
+    bottom: 10.5rem;
+  }
+  .header-wrapper {
+    height: 85vh;
+    border: 1px solid cornflowerblue;
+    @include flexPoint(column, center);
+    .text-wrapper {
+      width: 70%;
+      height: 50vh;
+      border: 1px solid #0f0;
+      @include responsive(tab){
+        
+      }
+      @include responsive(desktop){
+
+      }
     }
   }
 }
