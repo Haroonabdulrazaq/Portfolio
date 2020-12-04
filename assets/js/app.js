@@ -54,3 +54,10 @@ const toggler = (wrapper, icon)=>{
     e.preventDefault();
     toggler(softWrapper, soft)
     })
+
+
+    // Rewrite toggle class to accept either add or remove base on your want
+    // And also use map like you wanted to do
+    // [technologyWrapper, languageWrapper, frameworkWrapper].map(element =>{
+    // toggler(element, remove) => Remove to remove element 
+    // })

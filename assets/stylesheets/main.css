@@ -712,6 +712,33 @@ a {
           transform: translateX(0.5rem);
 }
 
+.skills-section .skills-wrapper .soft-wrapper span {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
+  height: 3rem;
+  padding: 1rem;
+  margin: 0.2rem;
+  padding-bottom: 3rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.skills-section .skills-wrapper .soft-wrapper span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0.5rem 2rem #272a31;
+          box-shadow: 0 0.5rem 2rem #272a31;
+  border: 1px solid #2998ff;
+  background: #fff;
+  color: #2998ff;
+}
+
 .contact-form {
   min-height: 50vh;
   background: #e5e5e5;
