@@ -150,7 +150,7 @@ a {
 }
 
 .navigation__link {
-  color: #E5E5E5;
+  color: #e5e5e5;
   font-weight: 200;
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
@@ -393,7 +393,7 @@ a {
 
 .projects {
   height: auto;
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding: 1rem;
   padding-bottom: 10rem;
 }
@@ -549,7 +549,7 @@ a {
 
 .skills-section {
   height: auto;
-  padding: 2rem;
+  padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,7 +668,7 @@ a {
 
 .contact-form {
   min-height: 50vh;
-  background: #E5E5E5;
+  background: #e5e5e5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
