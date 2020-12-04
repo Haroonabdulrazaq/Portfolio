@@ -103,7 +103,7 @@ a {
   background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
   opacity: 0;
-  font-size: 0;
+  visibility: hidden;
   width: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -118,15 +118,28 @@ a {
   padding-bottom: 5rem;
 }
 
+.navigation__nav .social-icons a {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.7rem;
+}
+
 @media only screen and (min-width: 768px) {
   .navigation__nav .social-icons {
     padding-bottom: 2rem;
   }
+  .navigation__nav .social-icons a {
+    font-size: 2rem;
+  }
 }
 
-.navigation__nav .social-icons a {
-  color: white;
-  margin: 0 1rem;
+@media only screen and (min-width: 900px) {
+  .navigation__nav .social-icons {
+    padding-bottom: 2.5rem;
+  }
+  .navigation__nav .social-icons a {
+    font-size: 3rem;
+  }
 }
 
 .navigation__list {
@@ -143,10 +156,24 @@ a {
   }
 }
 
+.navigation__list a {
+  font-size: 1.7rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation__list a {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .navigation__list a {
+    font-size: 3rem;
+  }
+}
+
 .navigation__item {
   margin: 2rem 1rem;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 .navigation__item:hover {
@@ -154,6 +181,7 @@ a {
 }
 
 .navigation__link {
+  border: 1px solid red;
   color: #e5e5e5;
   font-weight: 200;
   text-transform: uppercase;
@@ -161,33 +189,21 @@ a {
   transition: all 0.5s ease;
 }
 
-.navigation__link i {
-  display: inline-block;
-}
-
 .navigation__link:hover {
   color: #fff;
-  -webkit-transform: translateX(1.5rem);
-          transform: translateX(1.5rem);
+  -webkit-transform: translate(1.5rem);
+          transform: translate(1.5rem);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 75%;
   opacity: 1;
-  font-size: 1.7rem;
+  visibility: visible;
 }
 
 @media only screen and (min-width: 768px) {
   .navigation__checkbox:checked ~ .navigation__nav {
     width: 50%;
-    font-size: 2.3rem;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .navigation__checkbox:checked ~ .navigation__nav {
-    width: 50%;
-    font-size: 3rem;
   }
 }
 

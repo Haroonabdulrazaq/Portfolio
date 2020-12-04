@@ -32,7 +32,7 @@
     z-index: 3;
     background: linear-gradient(to right bottom, $light-blue, $dark-blue);
     opacity: 0;
-    font-size: 0;
+    visibility: hidden;
     width: 0;
     transition: all 0.5s ease;
 
@@ -43,14 +43,22 @@
       bottom: 0;
       left: 0;
       padding-bottom: 5rem;
-
-      @include responsive(tab) {
-        padding-bottom: 2rem;
-      }
-
       a {
         color: white;
         margin: 0 1rem;
+        font-size: 1.7rem;
+      }
+      @include responsive(tab) {
+        padding-bottom: 2rem;
+        a {
+          font-size: 2rem;
+        }
+      }
+      @include responsive(desktop) {
+        padding-bottom: 2.5rem;
+        a {
+          font-size: 3rem;
+        }
       }
     }
   }
@@ -65,11 +73,20 @@
       top: 25%;
       right: 45%;
     }
+    a {
+      font-size: 1.7rem;
+        @include responsive(tab) {
+          font-size: 2rem;
+        }
+        @include responsive(desktop) {
+          font-size: 3rem;
+        }
+    }
   }
 
   &__item {
     margin: 2rem 1rem;
-    transition: all 0.2s ease;
+    // transition: all 0.2s ease;
 
     &:hover {
       border-bottom: 0.2rem solid $white;
@@ -77,34 +94,24 @@
   }
 
   &__link {
+    border: 1px solid red;
     color: $dirty-white;
     font-weight: 200;
     text-transform: uppercase;
     transition: all 0.5s ease;
-
-    i {
-      display: inline-block;
-    }
-
     &:hover {
       color: $white;
-      transform: translateX(1.5rem);
+      transform: translate(1.5rem);
     }
   }
 
   &__checkbox:checked ~ &__nav {
     width: 75%;
     opacity: 1;
-    font-size: 1.7rem;
+    visibility: visible;
 
     @include responsive(tab) {
       width: 50%;
-      font-size: 2.3rem;
-    }
-
-    @include responsive(desktop) {
-      width: 50%;
-      font-size: 3rem;
     }
   }
 }
