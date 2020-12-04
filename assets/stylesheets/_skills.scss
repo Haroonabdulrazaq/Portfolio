@@ -1,6 +1,5 @@
 .skills-section {
   height: auto;
-  // border: 1px solid #0f0;
   padding: 2rem;
   @include flexPoint(column, space-between );
 
@@ -9,7 +8,6 @@
   }
 
   .about-wrapper {
-    // border: 1px solid $light-blue;
     width: 100%;
     height: auto;
 
