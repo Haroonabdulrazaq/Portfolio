@@ -181,18 +181,17 @@ a {
 }
 
 .navigation__link {
-  border: 1px solid red;
   color: #e5e5e5;
   font-weight: 200;
   text-transform: uppercase;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .navigation__link:hover {
-  color: #fff;
-  -webkit-transform: translate(1.5rem);
-          transform: translate(1.5rem);
+  color: #ec5242;
+  -webkit-transform: translateX(0.5rem);
+          transform: translateX(0.5rem);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
@@ -571,6 +570,7 @@ a {
   height: auto;
   padding: 1.5rem;
   margin: 5rem 0;
+  border: 1px solid #ec5242;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,20 +728,22 @@ a {
           transform: translateX(0.5rem);
 }
 
+.skills-section .skills-wrapper .soft-wrapper {
+  height: auto;
+}
+
 .skills-section .skills-wrapper .soft-wrapper span {
   display: inline-block;
   background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
-  height: 3rem;
   padding: 1rem;
-  margin: 0.2rem;
-  padding-bottom: 3rem;
+  margin: 0.5rem;
   border-radius: 0.5rem;
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
