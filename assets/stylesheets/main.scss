@@ -55,6 +55,10 @@ body {
   box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
 }
 
+.hide {
+  display: none;
+}
+
 @mixin flexPoint($direction, $justify) {
   display: flex;
   flex-direction: $direction;

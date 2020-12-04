@@ -1,6 +1,7 @@
 .skills-section {
   height: auto;
   padding: 1.5rem;
+  margin: 5rem 0;
 
   @include flexPoint(column, space-between );
 
@@ -70,9 +71,45 @@
   }
 
   .skills-wrapper {
-    border: 1px solid $orange;
+    // border: 1px solid $orange;
     width: 100%;
     height: 65vh;
+    margin: 5rem 0;
+    padding: 2rem;
+
+    .skills {
+      background: $dirty-white;
+      padding: 1rem 0.5rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      .fa-arrow-down {
+        transition: all 0.5s ease-in-out;
+        transform: rotate(270deg);
+      }
+      .rotate-side {
+        transform: rotate(360deg);
+      }
+    }
+    .content-wrapper {
+      background: $white;
+      padding: 1rem;
+      height: auto;
+      border-left: 3px solid $light-blue;
+      margin-bottom: 1rem;
+      
+      img {
+        margin: 1rem;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          transform: translateX(0.5rem);
+        }
+      }
+       
+    }
   }
 }
+
+
 
