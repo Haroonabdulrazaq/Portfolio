@@ -21,7 +21,10 @@ let technologyWrapper   = document.querySelector('.technology-wrapper')
 
 let softSkill = document.querySelector('.soft-skills')
 let softWrapper = document.querySelector('.soft-wrapper')
-// let contentWrapper = document.querySelector('.content-wrapper')
+
+
+let contentWrapper = document.querySelector('.content-wrapper')
+let arrow = document.querySelector('.fa-arrow-down')
 let lang  = document.querySelector('.lang')
 let frame  = document.querySelector('.frame')
 let tech  = document.querySelector('.tech')
@@ -34,24 +37,20 @@ const toggler = (wrapper, icon)=>{
 
   language.addEventListener('click',(e)=>{
     e.preventDefault();
-    frameworkWrapper.classList.add('hide')
-    technologyWrapper.classList.add('hide')
-    softWrapper.classList.add('hide')
     toggler(languageWrapper, lang)
   } )
 
   framework.addEventListener('click', (e)=>{
   e.preventDefault();
-  languageWrapper.classList.add('hide')
-  technologyWrapper.classList.add('hide')
-  softWrapper.classList.add('hide')
   toggler(frameworkWrapper, frame)
   })
   
   technology.addEventListener('click', (e)=>{
    e.preventDefault();
-   languageWrapper.classList.add('hide')
-   frameworkWrapper.classList.add('hide')
-   softWrapper.classList.add('hide')
    toggler(technologyWrapper, tech)
    })
+
+   softSkill.addEventListener('click', (e)=>{
+    e.preventDefault();
+    toggler(softWrapper, soft)
+    })
