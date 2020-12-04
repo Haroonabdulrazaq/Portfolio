@@ -373,9 +373,22 @@ a {
   font-weight: 500;
 }
 
+@media only screen and (min-width: 1500px) {
+  .header .header-wrapper .social-media h4 {
+    font-size: 5rem;
+  }
+}
+
 .header .header-wrapper .social-media a {
   margin: 1rem;
   font-size: 2rem;
+}
+
+@media only screen and (min-width: 1500px) {
+  .header .header-wrapper .social-media a {
+    font-size: 5rem;
+    margin: 2rem;
+  }
 }
 
 .projects {
@@ -535,34 +548,121 @@ a {
 }
 
 .skills-section {
-  height: 70vh;
-  border: 1px solid #0f0;
+  height: auto;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  padding: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .skills-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .skills-section .about-wrapper {
-  border: 1px solid #2998ff;
-  width: 40%;
-  height: 65vh;
+  width: 100%;
+  height: auto;
+}
+
+.skills-section .about-wrapper .know-me {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .skills-section .about-wrapper .know-me {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .skills-section .about-wrapper .know-me {
+    font-size: 5rem;
+  }
+}
+
+.skills-section .about-wrapper .about-text {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 900px) {
+  .skills-section .about-wrapper .about-text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .skills-section .about-wrapper .about-text {
+    font-size: 5rem;
+  }
+}
+
+.skills-section .about-wrapper .social-media {
+  text-align: center;
+  margin: 2rem;
+}
+
+.skills-section .about-wrapper .social-media h4 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .skills-section .about-wrapper .social-media h4 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .skills-section .about-wrapper .social-media h4 {
+    font-size: 5rem;
+  }
+}
+
+.skills-section .about-wrapper .social-media a {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .skills-section .about-wrapper .social-media a {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .skills-section .about-wrapper .social-media a {
+    font-size: 5rem;
+  }
 }
 
 .skills-section .skills-wrapper {
   border: 1px solid #ec5242;
-  width: 59%;
+  width: 100%;
   height: 65vh;
 }
 

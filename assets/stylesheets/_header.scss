@@ -128,13 +128,20 @@
       width: 70%;
       margin: 0 auto;
       padding: 2rem;
-      h4{
+      h4 {
         font-size: 1.5rem;
         font-weight: 500;
+        @include responsive(large-screen){
+          font-size: 5rem;
+        }
       }
       a {
         margin: 1rem;
         font-size: 2rem;
+        @include responsive(large-screen){
+          font-size: 5rem;
+          margin: 2rem;
+        }
       }
     }
   }

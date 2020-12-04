@@ -1,0 +1,23 @@
+border: 1px solid $light-blue;
+    width: 40%;
+    height: 65vh;
+    padding: 5rem 2rem;
+    .know-me {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .about-text {
+      font-size: 1.5rem;
+      line-height: 2;
+    }
+    .social-media {
+      margin-top: 2rem;
+      border: 0.1rem solid #0f0;
+      h4 {
+        font-size: 1.5rem;
+      }
+      a + a {
+        font-size: 2rem;
+        margin: 0 1rem ;
+      }
+    }
