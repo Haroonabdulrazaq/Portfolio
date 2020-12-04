@@ -20,6 +20,10 @@ body {
   color: #344563;
 }
 
+.orange-color {
+  color: #ec5242;
+}
+
 .dark-color {
   color: #272a31;
 }
@@ -30,10 +34,6 @@ body {
 
 .white-color {
   color: #fff;
-}
-
-.orange-border {
-  border: #ec5242;
 }
 
 .shadow {
@@ -261,12 +261,24 @@ a {
   bottom: 27.8rem;
 }
 
+@media only screen and (min-width: 900px) {
+  .header .Ellipse-13 {
+    left: 37.06rem;
+  }
+}
+
 .header .Ellipse-12 {
   position: absolute;
   width: 3.69rem;
   height: 1.84rem;
   left: 1.06rem;
   bottom: 30.7rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .header .Ellipse-12 {
+    left: 37.06rem;
+  }
 }
 
 .header .Rectangle-5 {
@@ -327,6 +339,10 @@ a {
   .header .header-wrapper .header-name {
     font-size: 9rem;
   }
+}
+
+.header .header-wrapper .header-name .name {
+  color: #ec5242;
 }
 
 .header .header-wrapper .header-sub {
@@ -518,64 +534,9 @@ a {
           transform: rotateY(0);
 }
 
-.skills {
-  background: #fff;
-  min-height: 75vh;
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.skills .skill {
-  background: #E5E5E5;
-  max-width: 40vh;
-  min-height: 20vh;
-  padding: 1rem;
-  margin: 1rem;
+.skills-section {
+  height: 70vh;
+  border: 1px solid #0f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,54 +544,26 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media only screen and (min-width: 768px) {
-  .skills .skill {
-    width: 30vh;
-    min-height: 40vh;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .skills .skill {
-    width: 40vh;
-    min-height: 40vh;
-  }
-}
-
-.skills .skill span {
-  display: inline-block;
-  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
-  background: linear-gradient(to right bottom, #2998ff, #5643fa);
-  height: 3rem;
-  padding: 1rem;
-  margin: 0.2rem;
-  padding-bottom: 3rem;
-  border-radius: 0.5rem;
-  color: #fff;
-  font-size: 1.5rem;
   text-align: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  cursor: pointer;
+  padding: 1em;
 }
 
-.skills .skill span:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 0 0.5rem 2rem #272a31;
-          box-shadow: 0 0.5rem 2rem #272a31;
-  border: 0.1rem solid #2998ff;
-  background: #fff;
-  color: #2998ff;
+.skills-section .about-wrapper {
+  border: 1px solid #2998ff;
+  width: 40%;
+  height: 65vh;
+}
+
+.skills-section .skills-wrapper {
+  border: 1px solid #ec5242;
+  width: 59%;
+  height: 65vh;
 }
 
 .contact-form {

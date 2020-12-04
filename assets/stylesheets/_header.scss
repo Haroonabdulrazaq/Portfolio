@@ -60,6 +60,9 @@
     height: 3rem;
     left: 1.06rem;
     bottom: 27.8rem;
+    @include responsive(desktop){
+      left: 37.06rem;
+    }
   }
 
   .Ellipse-12 {
@@ -68,6 +71,9 @@
     height: 1.84rem;
     left: 1.06rem;
     bottom: 30.7rem;
+    @include responsive(desktop){
+      left: 37.06rem;
+    }
   }
 
    .Rectangle-5 {
@@ -101,6 +107,9 @@
 
       @include responsive(large-screen) {
         font-size: 9rem;
+      }
+      .name {
+        color: $orange;
       }
     }
 
