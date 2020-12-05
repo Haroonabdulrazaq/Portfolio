@@ -506,7 +506,7 @@ a {
 
 @media only screen and (min-width: 1500px) {
   .header .header-wrapper .header-name {
-    font-size: 9rem;
+    font-size: 6rem;
   }
 }
 
@@ -527,7 +527,7 @@ a {
 
 @media only screen and (min-width: 1500px) {
   .header .header-wrapper .header-sub {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -596,6 +596,13 @@ a {
   box-shadow: 0 1rem 2rem rgba(39, 42, 49, 0.4);
   -webkit-transform: translateY(-0.2rem);
   transform: translateY(-0.2rem);
+}
+
+.form .btn-primary:active {
+  -webkit-box-shadow: 0 0.5rem 5rem rgba(39, 42, 49, 0.4);
+  box-shadow: 0 0.5rem 5rem rgba(39, 42, 49, 0.4);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .header .btn-primary:hover {
@@ -802,13 +809,6 @@ a {
   }
 }
 
-.form .btn-primary:active {
-  -webkit-box-shadow: 0 0.5rem 5rem rgba(39, 42, 49, 0.4);
-  box-shadow: 0 0.5rem 5rem rgba(39, 42, 49, 0.4);
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-
 .say-hi {
   width: 100%;
 }
@@ -835,7 +835,7 @@ a {
 
 @media only screen and (min-width: 1500px) {
   .say-hi .about-text {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 

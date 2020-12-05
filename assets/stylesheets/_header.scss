@@ -118,7 +118,7 @@
       }
 
       @include responsive(large-screen) {
-        font-size: 9rem;
+        font-size: 6rem;
       }
 
       .name {
@@ -135,7 +135,7 @@
       }
 
       @include responsive(large-screen) {
-        font-size: 5rem;
+        font-size: 4rem;
       }
     }
 

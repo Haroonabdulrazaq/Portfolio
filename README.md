@@ -5,7 +5,8 @@ It consist of all projects i have built and skills i am comfortable working with
 
 ## :camera: Screenshot 
 ![screenshot](./assets/image/portfolio.png)
- 
+
+
 ## Built With
 
 - HTML5
@@ -15,7 +16,7 @@ It consist of all projects i have built and skills i am comfortable working with
 - JavaScript(ES6)
 
 ## :rocket: Live Demo
-[LIVE DEMO LINK](https://haroonabdulrazaq.github.io/Portfolio/)
+[LIVE DEMO LINK](https://haroonabdulrazaq.tech)
 
 ## :camera: Presentation 
 
@@ -55,7 +56,7 @@ $ npm install
 - [Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)
 
 ## Deploy 🚀
-This project is deploy to Netlify and Github pages
+This project is deploy to Netlify
 
 ## Author
 
@@ -71,6 +72,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - I appreciate Jonas SCHMEDTMAN for the animation techniques
+- Microverse Student Figma Design
+- Picture by Iconfinder & NicePng
 
 ## 📝 License
 
