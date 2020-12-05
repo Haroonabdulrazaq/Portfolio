@@ -23,41 +23,59 @@ let softSkill = document.querySelector('.soft-skills')
 let softWrapper = document.querySelector('.soft-wrapper')
 
 
-let contentWrapper = document.querySelector('.content-wrapper')
+let contentWrapper = document.querySelectorAll('.content-wrapper')
 let arrow = document.querySelector('.fa-arrow-down')
 let lang  = document.querySelector('.lang')
 let frame  = document.querySelector('.frame')
 let tech  = document.querySelector('.tech')
 let soft  = document.querySelector('.soft')
 
-const toggler = (wrapper, icon)=>{
+
+
+const adder = (wrapper, icon)=> {
+  wrapper.classList.add('hide');
+  icon.classList.remove('rotate-side');
+}
+
+const toggler = (wrapper, icon)=> {
   wrapper.classList.toggle('hide');
   icon.classList.toggle('rotate-side');
 }
 
-  language.addEventListener('click',(e)=>{
+  language.addEventListener('click',(e)=> {
     e.preventDefault();
-    toggler(languageWrapper, lang)
-  } )
-
-  framework.addEventListener('click', (e)=>{
-  e.preventDefault();
-  toggler(frameworkWrapper, frame)
+   if(!e.target.matches('skills language')){
+    toggler(languageWrapper, lang) 
+    adder(frameworkWrapper, frame)
+    adder(technologyWrapper, tech)
+    adder(softWrapper, soft)
+   } 
   })
-  
-  technology.addEventListener('click', (e)=>{
-   e.preventDefault();
-   toggler(technologyWrapper, tech)
-   })
-
-   softSkill.addEventListener('click', (e)=>{
+  framework.addEventListener('click', (e)=>{
     e.preventDefault();
-    toggler(softWrapper, soft)
-    })
-
-
-    // Rewrite toggle class to accept either add or remove base on your want
-    // And also use map like you wanted to do
-    // [technologyWrapper, languageWrapper, frameworkWrapper].map(element =>{
-    // toggler(element, remove) => Remove to remove element 
-    // })
+    if(!e.target.matches('skills framework')){
+      toggler(frameworkWrapper, frame)
+      adder(languageWrapper, lang)
+      adder(technologyWrapper, tech)
+      adder(softWrapper, soft)
+     }   
+  })
+  technology.addEventListener('click',(e)=> {
+    e.preventDefault();
+    if(!e.target.matches('skills technology')){
+      adder(languageWrapper, lang)
+      adder(frameworkWrapper, frame)
+      adder(softWrapper, soft)
+      toggler(technologyWrapper, tech)
+    }
+  })
+  softSkill.addEventListener('click', (e)=>{
+    e.preventDefault();
+    if(!e.target.matches('skills softSkill')){
+      adder(languageWrapper, lang)
+      adder(frameworkWrapper, frame)
+      adder(technologyWrapper, tech)
+      toggler(softWrapper, soft)
+    }
+  })
+ 
