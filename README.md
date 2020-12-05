@@ -6,7 +6,6 @@ It consist of all projects i have built and skills i am comfortable working with
 ## :camera: Screenshot 
 ![screenshot](./assets/image/portfolio.png)
 
-
 ## Built With
 
 - HTML5
