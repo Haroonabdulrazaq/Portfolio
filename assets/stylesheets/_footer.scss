@@ -11,21 +11,25 @@
   }
 
   .social-media {
-    @include flexPoint(row, space-around);
-
-    flex-wrap: wrap;
-
-    @include responsive(desktop) {
-      font-size: 2.5rem;
+    ul,li {
+      display: inline-block;
+    }
+   
+    li {
+      font-size: 2rem;
+      padding: 2rem;
+      @include responsive(desktop) {
+        font-size: 5rem;
+      }
     }
   }
 
   .back {
     i {
       font-size: 5rem;
+      font-weight: 200;
     }
   }
-
   @include responsive(desktop) {
     height: 25vh;
   }
