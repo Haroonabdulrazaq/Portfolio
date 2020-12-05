@@ -1,5 +1,5 @@
 .footer {
-  height: 20vh;
+  height: 25vh;
   background: $dark;
   color: $white;
   padding: 1rem;
@@ -11,22 +11,29 @@
   }
 
   .social-media {
-    @include flexPoint(row, space-around);
+    ul,
+    li {
+      display: inline-block;
+    }
 
-    flex-wrap: wrap;
+    li {
+      font-size: 2rem;
+      padding: 2rem;
 
-    @include responsive(desktop) {
-      font-size: 2.5rem;
+      @include responsive(desktop) {
+        font-size: 5rem;
+        padding: 5rem;
+      }
     }
   }
 
   .back {
     i {
       font-size: 5rem;
+      font-weight: 200;
     }
   }
-
-  @include responsive(desktop) {
-    height: 25vh;
-  }
+  // @include responsive(desktop) {
+  //   height: 25vh;
+  // }
 }

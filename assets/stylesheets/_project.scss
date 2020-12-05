@@ -1,7 +1,8 @@
 .projects {
   height: auto;
-  background: $white;
+  background: $dirty-white;
   padding: 1rem;
+  padding-bottom: 10rem;
 
   .project-wrapper {
     display: grid;
@@ -34,7 +35,7 @@
   @include flexPoint(column, space-between);
 
   &__side {
-    background: $dirty-white;
+    background: $white;
     border-radius: 1rem;
     padding: 1rem;
     transition: all 0.8s ease;

@@ -24,6 +24,30 @@
     }
   }
 
+  &__list {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+    text-align: left;
+
+    @include responsive(desktop) {
+      top: 25%;
+      right: 45%;
+    }
+
+    a {
+      font-size: 1.7rem;
+
+      @include responsive(tab) {
+        font-size: 2rem;
+      }
+
+      @include responsive(desktop) {
+        font-size: 3rem;
+      }
+    }
+  }
+
   &__nav {
     height: 100vh;
     position: fixed;
@@ -32,7 +56,7 @@
     z-index: 3;
     background: linear-gradient(to right bottom, $light-blue, $dark-blue);
     opacity: 0;
-    font-size: 0;
+    visibility: hidden;
     width: 0;
     transition: all 0.5s ease;
 
@@ -44,35 +68,35 @@
       left: 0;
       padding-bottom: 5rem;
 
-      @include responsive(tab) {
-        padding-bottom: 2rem;
-      }
-
       a {
         color: white;
         margin: 0 1rem;
+        font-size: 1.7rem;
       }
-    }
-  }
 
-  &__list {
-    position: absolute;
-    top: 25%;
-    right: 30%;
-    text-align: left;
+      @include responsive(tab) {
+        padding-bottom: 2rem;
 
-    @include responsive(desktop) {
-      top: 25%;
-      right: 45%;
+        a {
+          font-size: 2rem;
+        }
+      }
+
+      @include responsive(desktop) {
+        padding-bottom: 2.5rem;
+
+        a {
+          font-size: 3rem;
+        }
+      }
     }
   }
 
   &__item {
     margin: 2rem 1rem;
-    transition: all 0.2s ease;
 
     &:hover {
-      border-bottom: 2px solid $white;
+      border-bottom: 0.2rem solid $white;
     }
   }
 
@@ -80,32 +104,15 @@
     color: $dirty-white;
     font-weight: 200;
     text-transform: uppercase;
-
-    i {
-      display: inline-block;
-    }
-
-    transition: all 0.5s ease;
-
-    &:hover {
-      color: $white;
-      transform: translateX(1.5rem);
-    }
   }
 
   &__checkbox:checked ~ &__nav {
     width: 75%;
     opacity: 1;
-    font-size: 1.7rem;
+    visibility: visible;
 
     @include responsive(tab) {
       width: 50%;
-      font-size: 2.3rem;
-    }
-
-    @include responsive(tab) {
-      width: 50%;
-      font-size: 3rem;
     }
   }
 }

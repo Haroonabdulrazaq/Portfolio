@@ -16,12 +16,6 @@ $dark:#272a31;
 $grey: #d3d3d3;
 $text-grey: #344563;   //#0f0f0fd2; background:
 
-$light-purple: #d789d7;
-$dark-purple: #52057b;
-
-$light-brown: #e89f71;
-$dark-brown: #aa4a30;
-
 $light-green:#7ed56f;
 $dark-green: #28b485;
 
@@ -29,9 +23,8 @@ $light-blue:#2998ff;
 $dark-blue:#5643fa;
 
 $orange: #ec5242;
-$light-orange: #f5d3cf;
 
-$dirty-white: #f1f1f1;
+$dirty-white: #e5e5e5;//#f1f1f1;
 $white: #fff;
 
 body {
@@ -40,6 +33,10 @@ body {
   background: $white;
   box-sizing: border-box;
   color: $text-grey;
+}
+
+.orange-color {
+  color: $orange;
 }
 
 .dark-color {
@@ -54,12 +51,12 @@ body {
   color: $white;
 }
 
-.orange-border {
-  border: $orange;
-}
-
 .shadow {
   box-shadow: 1px 1px 5px rgba(39, 42, 49, 0.8);
+}
+
+.hide {
+  display: none;
 }
 
 @mixin flexPoint($direction, $justify) {
@@ -88,9 +85,9 @@ a {
   }
 }
 
+@import "project";
 @import "navigation";
 @import "header";
-@import "project";
-@import "skills";
 @import "contact";
+@import "skills";
 @import "footer";

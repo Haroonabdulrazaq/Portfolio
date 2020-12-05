@@ -1,59 +1,146 @@
-.skills {
-  background: $dirty-white;
-  min-height: 50vh;
-  padding: 1rem;
+.skills-section {
+  height: auto;
+  padding: 1.5rem;
+  margin: 5rem 0;
 
-  @include flexPoint(column, space-around);
+  @include flexPoint(column, space-between );
 
   @include responsive(tab) {
-    @include flexPoint(row, space-around);
+    @include flexPoint(row, space-between );
   }
 
-  @include responsive(desktop) {
-    @include flexPoint(row, space-around);
-  }
+  .about-wrapper {
+    width: 100%;
+    height: auto;
 
-  .skill {
-    background: $white;
-    max-width: 40vh;
-    min-height: 20vh;
-    padding: 1rem;
-    margin: 1rem;
+    .know-me {
+      font-weight: 700;
+      font-size: 2.5rem;
 
-    @include flexPoint(row, space-around);
+      @include responsive(desktop) {
+        font-size: 3rem;
+      }
 
-    flex-wrap: wrap;
-
-    @include responsive(tab) {
-      width: 30vh;
-      min-height: 40vh;
+      @include responsive(large-screen) {
+        font-size: 5rem;
+      }
     }
 
-    @include responsive(desktop) {
-      width: 40vh;
-      min-height: 40vh;
-    }
-
-    span {
-      display: inline-block;
-      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
-      height: 3rem;
-      padding: 1rem;
-      margin: 0.2rem;
-      padding-bottom: 3rem;
-      border-radius: 0.5rem;
-      color: $white;
+    .about-text {
       font-size: 1.5rem;
-      text-align: center;
-      transition: all 0.5s ease;
-      cursor: pointer;
+      line-height: 2;
 
-      &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0.5rem 2rem $dark;
-        border: 1px solid $light-blue;
-        background: $white;
-        color: $light-blue;
+      @include responsive(desktop) {
+        font-size: 2rem;
+      }
+
+      @include responsive(large-screen) {
+        font-size: 5rem;
+      }
+    }
+
+    .social-media {
+      text-align: center;
+      margin: 2rem;
+
+      h4 {
+        font-size: 1.5rem;
+
+        @include responsive(desktop) {
+          font-size: 3rem;
+        }
+
+        @include responsive(large-screen) {
+          font-size: 5rem;
+        }
+      }
+
+      a {
+        font-size: 2rem;
+        margin: 0 1rem;
+
+        @include responsive(desktop) {
+          font-size: 3rem;
+        }
+
+        @include responsive(large-screen) {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+
+  .skills-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 5rem 0;
+    padding: 2rem;
+
+    .skills {
+      background: $dirty-white;
+      padding: 1rem 0.5rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+
+      .fa-arrow-down {
+        transition: all 0.2s ease-in-out;
+        transform: rotate(270deg);
+      }
+
+      .rotate-side {
+        transform: rotate(360deg);
+      }
+    }
+
+    .content-wrapper {
+      background: $white;
+      padding: 1rem;
+      height: auto;
+      border-left: 3px solid $light-blue;
+      margin-bottom: 1rem;
+
+      img {
+        margin: 1rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transform: translateX(0.5rem);
+        }
+      }
+    }
+
+    .soft-wrapper,
+    .technology-wrapper {
+      height: auto;
+
+      span {
+        display: inline-block;
+        background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+        color: $white;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 0.1rem;
+        border-radius: 0.5rem;
+
+        @include responsive(desktop) {
+          font-size: 1.5rem;
+          padding: 1rem;
+          margin: 0.5rem;
+          border-radius: 0.5rem;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0.5rem 2rem $dark;
+          border: 1px solid $light-blue;
+          background: $white;
+          color: $light-blue;
+        }
       }
     }
   }

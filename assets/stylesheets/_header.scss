@@ -1,27 +1,128 @@
 .header {
-  height: 85vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.582) 10%), url('../image/software.jpeg') no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  text-align: center;
+  background: $white;
+  border-radius: 0 0 0 5rem;
+  margin-bottom: 0.5rem;
 
-  @include flexPoint(column, space-around);
+  .Ellipse-3 {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    right: 2rem;
+    bottom: 14rem;
 
-  .header-text {
-    padding: 1rem;
+    @include responsive(desktop) {
+      position: absolute;
+      width: 10rem;
+      height: 10rem;
+      right: 3rem;
+      top: 14rem;
+    }
+  }
+
+  .Ellipse-11 {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 1.6rem;
+    top: 2rem;
+
+    @include responsive(desktop) {
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      left: 1.3rem;
+      top: 2rem;
+    }
+  }
+
+  .Ellipse-4 {
+    position: absolute;
+    width: 4.7rem;
+    height: 4.7rem;
+    left: 8.9rem;
+    bottom: 9.5rem;
+  }
+
+  .Ellipse-5 {
+    position: absolute;
+    width: 2.3rem;
+    height: 2.3rem;
+    right: 5.5rem;
+    bottom: 17.5rem;
+
+    @include responsive(desktop) {
+      right: 14.5rem;
+      bottom: 17.5rem;
+    }
+  }
+
+  .Ellipse-13 {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 1.06rem;
+    bottom: 27.8rem;
+
+    @include responsive(desktop) {
+      left: 37.06rem;
+    }
+  }
+
+  .Ellipse-12 {
+    position: absolute;
+    width: 3.69rem;
+    height: 1.84rem;
+    left: 1.06rem;
+    bottom: 30.7rem;
+
+    @include responsive(desktop) {
+      left: 37.06rem;
+    }
+  }
+
+  .Rectangle-5 {
+    position: absolute;
+    width: 10rem;
+    height: 5.5rem;
+    left: 8.9rem;
+    bottom: 11.5rem;
+  }
+
+  .header-wrapper {
+    height: 85vh;
+
+    @include flexPoint(column, center);
+
+    z-index: 2;
+
+    .text-wrapper {
+      width: 90%;
+      height: 50vh;
+
+      @include responsive(tab) {
+        width: 70%;
+      }
+
+      @include responsive(desktop) {
+        width: 60%;
+      }
+    }
 
     .header-name {
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight: 700;
 
       @include responsive(tab) {
-        font-size: 5rem;
+        font-size: 4rem;
       }
 
       @include responsive(large-screen) {
-        font-size: 9rem;
+        font-size: 6rem;
+      }
+
+      .name {
+        color: $orange;
       }
     }
 
@@ -34,22 +135,58 @@
       }
 
       @include responsive(large-screen) {
-        font-size: 5rem;
+        font-size: 4rem;
+      }
+    }
+
+    .social-media {
+      width: 70%;
+      margin: 0 auto;
+      padding: 2rem;
+
+      h4 {
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        @include responsive(large-screen) {
+          font-size: 5rem;
+        }
+      }
+
+      a {
+        margin: 1rem;
+        font-size: 2rem;
+
+        @include responsive(large-screen) {
+          font-size: 5rem;
+          margin: 2rem;
+        }
       }
     }
   }
 
-  i {
-    font-size: 5rem;
-    color: $white;
+  .btn-primary {
+    width: 12rem;
+    padding: 1rem;
     cursor: pointer;
+    border: 0.5px solid rgba($light-blue, 0.8);
+    color: $light-blue;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
 
-    @include responsive(tab) {
-      font-size: 8rem;
+    &:hover {
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+      color: $white;
+      box-shadow: 0 1rem 2rem rgba($dark, 0.4);
+      transform: translateY(-0.2rem);
     }
 
-    @include responsive(large-screen) {
-      font-size: 12rem;
+    &:active {
+      box-shadow: 0 0.5rem 5rem rgba($dark, 0.4);
+      transform: translateY(0);
     }
   }
 }
