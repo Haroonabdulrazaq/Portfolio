@@ -11,13 +11,15 @@
   }
 
   .social-media {
-    ul,li {
+    ul,
+    li {
       display: inline-block;
     }
-   
+
     li {
       font-size: 2rem;
       padding: 2rem;
+
       @include responsive(desktop) {
         font-size: 5rem;
         padding: 5rem;

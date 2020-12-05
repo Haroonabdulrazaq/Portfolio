@@ -83,33 +83,38 @@
       border-radius: 0.5rem;
       cursor: pointer;
       margin-bottom: 1rem;
+
       .fa-arrow-down {
         transition: all 0.2s ease-in-out;
         transform: rotate(270deg);
       }
+
       .rotate-side {
         transform: rotate(360deg);
       }
     }
+
     .content-wrapper {
       background: $white;
       padding: 1rem;
       height: auto;
       border-left: 3px solid $light-blue;
       margin-bottom: 1rem;
-      
+
       img {
         margin: 1rem;
         transition: all 0.5s ease-in-out;
+
         &:hover {
           transform: translateX(0.5rem);
         }
       }
-       
     }
 
-    .soft-wrapper,.technology-wrapper {
+    .soft-wrapper,
+    .technology-wrapper {
       height: auto;
+
       span {
         display: inline-block;
         background: linear-gradient(to right bottom, $light-blue, $dark-blue);
@@ -121,13 +126,14 @@
         padding: 0.5rem;
         margin: 0.1rem;
         border-radius: 0.5rem;
-        @include responsive(desktop){
+
+        @include responsive(desktop) {
           font-size: 1.5rem;
           padding: 1rem;
           margin: 0.5rem;
           border-radius: 0.5rem;
         }
-        
+
         &:hover {
           transform: scale(1.1);
           box-shadow: 0 0.5rem 2rem $dark;
@@ -139,6 +145,3 @@
     }
   }
 }
-
-
-

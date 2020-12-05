@@ -3,7 +3,8 @@
   background: $dirty-white;
 
   @include flexPoint(column-reverse, center);
-  @include responsive(tab){
+
+  @include responsive(tab) {
     @include flexPoint(row, center);
   }
 }
@@ -165,14 +166,16 @@
   width: 100%;
 
   .about-text {
-   font-style: italic;
+    font-style: italic;
     font-size: 1.5rem;
     line-height: 2;
     padding: 2rem;
     text-align: center;
+
     @include responsive(desktop) {
       font-size: 2rem;
     }
+
     @include responsive(large-screen) {
       font-size: 5rem;
     }
