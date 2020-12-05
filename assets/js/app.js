@@ -40,37 +40,30 @@ const toggler = (wrapper, icon) => {
 
 language.addEventListener('click', (e) => {
   e.preventDefault();
-  if (!e.target.matches('skills language')) {
     toggler(languageWrapper, lang);
     adder(frameworkWrapper, frame);
     adder(technologyWrapper, tech);
     adder(softWrapper, soft);
-  }
+ 
 });
 framework.addEventListener('click', (e) => {
   e.preventDefault();
-  if (!e.target.matches('skills framework')) {
     toggler(frameworkWrapper, frame);
     adder(languageWrapper, lang);
     adder(technologyWrapper, tech);
     adder(softWrapper, soft);
-  }
 });
 technology.addEventListener('click', (e) => {
   e.preventDefault();
-  if (!e.target.matches('skills technology')) {
     adder(languageWrapper, lang);
     adder(frameworkWrapper, frame);
     adder(softWrapper, soft);
     toggler(technologyWrapper, tech);
-  }
 });
 softSkill.addEventListener('click', (e) => {
   e.preventDefault();
-  if (!e.target.matches('skills softSkill')) {
     adder(languageWrapper, lang);
     adder(frameworkWrapper, frame);
     adder(technologyWrapper, tech);
     toggler(softWrapper, soft);
-  }
 });
