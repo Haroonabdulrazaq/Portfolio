@@ -4,7 +4,7 @@
 
   @include flexPoint(column-reverse, center);
 
-  @include responsive(tab) {
+  @include responsive(desktop) {
     @include flexPoint(row, center);
   }
 }
@@ -35,7 +35,7 @@
 
 .form {
   padding: 2rem;
-  width: 100%;
+  margin: 0 auto;
 
   &__group:not(:last-child) {
     margin-bottom: 1rem;
@@ -164,6 +164,10 @@
 
 .say-hi {
   width: 100%;
+
+  @include responsive(desktop) {
+    width: 50%;
+  }
 
   .about-text {
     font-style: italic;
