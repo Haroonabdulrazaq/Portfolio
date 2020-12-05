@@ -95,11 +95,6 @@
     color: $dirty-white;
     font-weight: 200;
     text-transform: uppercase;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-      color: $orange;
-      transform: translateX(0.5rem);
-    }
   }
 
   &__checkbox:checked ~ &__nav {

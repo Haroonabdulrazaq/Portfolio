@@ -184,14 +184,6 @@ a {
   color: #e5e5e5;
   font-weight: 200;
   text-transform: uppercase;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.navigation__link:hover {
-  color: #ec5242;
-  -webkit-transform: translateX(0.5rem);
-          transform: translateX(0.5rem);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
@@ -758,11 +750,11 @@ a {
           transform: translateX(0.5rem);
 }
 
-.skills-section .skills-wrapper .soft-wrapper {
+.skills-section .skills-wrapper .soft-wrapper, .skills-section .skills-wrapper .technology-wrapper {
   height: auto;
 }
 
-.skills-section .skills-wrapper .soft-wrapper span {
+.skills-section .skills-wrapper .soft-wrapper span, .skills-section .skills-wrapper .technology-wrapper span {
   display: inline-block;
   background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
@@ -778,7 +770,7 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
-  .skills-section .skills-wrapper .soft-wrapper span {
+  .skills-section .skills-wrapper .soft-wrapper span, .skills-section .skills-wrapper .technology-wrapper span {
     font-size: 1.5rem;
     padding: 1rem;
     margin: 0.5rem;
@@ -786,7 +778,7 @@ a {
   }
 }
 
-.skills-section .skills-wrapper .soft-wrapper span:hover {
+.skills-section .skills-wrapper .soft-wrapper span:hover, .skills-section .skills-wrapper .technology-wrapper span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0 0.5rem 2rem #272a31;
