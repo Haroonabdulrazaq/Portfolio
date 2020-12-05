@@ -40,30 +40,29 @@ const toggler = (wrapper, icon) => {
 
 language.addEventListener('click', (e) => {
   e.preventDefault();
-    toggler(languageWrapper, lang);
-    adder(frameworkWrapper, frame);
-    adder(technologyWrapper, tech);
-    adder(softWrapper, soft);
- 
+  toggler(languageWrapper, lang);
+  adder(frameworkWrapper, frame);
+  adder(technologyWrapper, tech);
+  adder(softWrapper, soft);
 });
 framework.addEventListener('click', (e) => {
   e.preventDefault();
-    toggler(frameworkWrapper, frame);
-    adder(languageWrapper, lang);
-    adder(technologyWrapper, tech);
-    adder(softWrapper, soft);
+  toggler(frameworkWrapper, frame);
+  adder(languageWrapper, lang);
+  adder(technologyWrapper, tech);
+  adder(softWrapper, soft);
 });
 technology.addEventListener('click', (e) => {
   e.preventDefault();
-    adder(languageWrapper, lang);
-    adder(frameworkWrapper, frame);
-    adder(softWrapper, soft);
-    toggler(technologyWrapper, tech);
+  adder(languageWrapper, lang);
+  adder(frameworkWrapper, frame);
+  adder(softWrapper, soft);
+  toggler(technologyWrapper, tech);
 });
 softSkill.addEventListener('click', (e) => {
   e.preventDefault();
-    adder(languageWrapper, lang);
-    adder(frameworkWrapper, frame);
-    adder(technologyWrapper, tech);
-    toggler(softWrapper, soft);
+  adder(languageWrapper, lang);
+  adder(frameworkWrapper, frame);
+  adder(technologyWrapper, tech);
+  toggler(softWrapper, soft);
 });
