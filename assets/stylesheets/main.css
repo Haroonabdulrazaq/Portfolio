@@ -794,16 +794,34 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .section-header {
@@ -989,22 +1007,31 @@ a {
 }
 
 .say-hi {
-  display: none;
+  width: 100%;
+}
+
+.say-hi .about-text {
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 900px) {
-  .say-hi {
-    display: block;
-    width: 50vw;
-    height: 50vh;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../image/hi.jpeg);
-    background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../image/hi.jpeg);
-    background-size: cover;
+  .say-hi .about-text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .say-hi .about-text {
+    font-size: 5rem;
   }
 }
 
 .footer {
-  height: 20vh;
+  height: 25vh;
   background: #272a31;
   color: #fff;
   padding: 1rem;
@@ -1040,17 +1067,12 @@ a {
 @media only screen and (min-width: 900px) {
   .footer .social-media li {
     font-size: 5rem;
+    padding: 5rem;
   }
 }
 
 .footer .back i {
   font-size: 5rem;
   font-weight: 200;
-}
-
-@media only screen and (min-width: 900px) {
-  .footer {
-    height: 25vh;
-  }
 }
 /*# sourceMappingURL=main.css.map */

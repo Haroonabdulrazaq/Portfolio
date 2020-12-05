@@ -2,7 +2,10 @@
   min-height: 50vh;
   background: $dirty-white;
 
-  @include flexPoint(row,center);
+  @include flexPoint(column-reverse, center);
+  @include responsive(tab){
+    @include flexPoint(row, center);
+  }
 }
 
 .section-header {
@@ -159,13 +162,19 @@
 }
 
 .say-hi {
-  display: none;
+  width: 100%;
 
-  @include responsive(desktop) {
-    display: block;
-    width: 50vw;
-    height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../image/hi.jpeg);
-    background-size: cover;
+  .about-text {
+   font-style: italic;
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 2rem;
+    text-align: center;
+    @include responsive(desktop) {
+      font-size: 2rem;
+    }
+    @include responsive(large-screen) {
+      font-size: 5rem;
+    }
   }
 }
