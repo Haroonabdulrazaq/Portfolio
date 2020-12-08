@@ -15,7 +15,7 @@ It consist of all projects i have built and skills i am comfortable working with
 - JavaScript(ES6)
 
 ## :rocket: Live Demo
-[LIVE DEMO LINK](https://haroonabdulrazaq.tech)
+[LIVE DEMO LINK](https://www.haroonabdulrazaq.tech)
 
 ## :camera: Presentation 
 
