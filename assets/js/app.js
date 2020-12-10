@@ -69,7 +69,10 @@ softSkill.addEventListener('click', (e) => {
 
 
 let submitBtn = document.querySelector('.send-btn');
+let paperPlane = document.querySelector('.fa-paper-plane');
+let loader = document.querySelector('.loader')
 
 submitBtn.addEventListener('click', ()=>{
-  
+  loader.classList.remove('hide')
+  paperPlane.classList.add('fly-plane')
 })

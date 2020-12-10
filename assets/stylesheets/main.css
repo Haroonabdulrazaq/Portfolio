@@ -51,7 +51,7 @@ body {
   width: 100vw;
   background: black;
   opacity: 0.5;
-  z-index: 5;
+  z-index: 0;
 }
 
 ul,
@@ -517,7 +517,7 @@ a {
   }
 }
 
-.header .header-wrapper .header-name .name {
+.header .header-wrapper .header-name .orange-color {
   color: #ec5242;
 }
 
@@ -797,8 +797,6 @@ a {
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  -webkit-animation: fly 1s ease-in-out;
-          animation: fly 1s ease-in-out;
 }
 
 .form .btn-primary:hover {
@@ -818,14 +816,24 @@ a {
           transform: translateY(0);
 }
 
+.form .btn-primary .fly-plane {
+  font-size: 5rem;
+  -webkit-animation: fly 1s ease-in-out 1;
+          animation: fly 1s ease-in-out 1;
+}
+
 @-webkit-keyframes fly {
   0% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-  0% {
-    -webkit-transform: translateX(5rem);
-            transform: translateX(5rem);
+  50% {
+    -webkit-transform: translate(12rem, -30rem);
+            transform: translate(12rem, -30rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -834,9 +842,13 @@ a {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-  0% {
-    -webkit-transform: translateX(5rem);
-            transform: translateX(5rem);
+  50% {
+    -webkit-transform: translate(12rem, -30rem);
+            transform: translate(12rem, -30rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
