@@ -50,7 +50,7 @@ body {
   height: 100vh;
   width: 100vw;
   background: black;
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: 0;
 }
 
@@ -60,6 +60,7 @@ body {
   width: 70%;
   height: 20vh;
   color: #fff;
+  border-radius: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,6 +79,7 @@ body {
 @media only screen and (min-width: 768px) {
   .loader .message-modal {
     width: 50%;
+    margin: 10% auto;
   }
 }
 
@@ -88,6 +90,28 @@ body {
 .loader .message-modal p i {
   color: #4CAF50;
   font-size: 3rem;
+}
+
+.loader .message-modal .ok {
+  width: 5rem;
+  padding: 1rem;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .loader .message-modal .ok {
+    width: 12rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1rem;
+  }
 }
 
 ul,
