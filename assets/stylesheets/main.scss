@@ -66,6 +66,15 @@ body {
   align-items: center;
 }
 
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  opacity: 0.5;
+  z-index: 5;
+}
+
 ul,
 li {
   list-style-type: none;

@@ -66,3 +66,10 @@ softSkill.addEventListener('click', (e) => {
   adder(technologyWrapper, tech);
   toggler(softWrapper, soft);
 });
+
+
+let submitBtn = document.querySelector('.send-btn');
+
+submitBtn.addEventListener('click', ()=>{
+  
+})
