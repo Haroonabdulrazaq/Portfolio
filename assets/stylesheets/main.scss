@@ -73,6 +73,25 @@ body {
   background: black;
   opacity: 0.5;
   z-index: 0;
+  .message-modal {
+    border: 2px solid $white;
+    margin: 50% auto;
+    width: 70%;
+    height: 20vh;
+    color: $white;
+    @include responsive(tab){
+      width: 50%;
+    }
+    @include flexPoint(column, center);
+    p {
+      font-size: 2.5rem;
+      i{
+        color: #4CAF50;
+        font-size: 3rem;
+      }
+    }
+  }
+
 }
 
 ul,
