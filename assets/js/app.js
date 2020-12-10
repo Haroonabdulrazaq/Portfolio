@@ -67,18 +67,19 @@ softSkill.addEventListener('click', (e) => {
   toggler(softWrapper, soft);
 });
 
-
 let submitBtn = document.querySelector('.send-btn');
-let paperPlane = document.querySelector('.fa-paper-plane');
+ let paperPlane = document.querySelector('.fa-paper-plane');
 let loader = document.querySelector('.loader')
 let ok = document.querySelector('.ok')
+let warning = document.querySelector('.warning')
 
-submitBtn.addEventListener('click', ()=>{
+submitBtn.addEventListener('click', (e)=>{
+  e.preventDefault()
   loader.classList.remove('hide')
   paperPlane.classList.add('fly-plane')
 })
-
-ok.addEventListener('click', ()=>{
+ 
+ok.addEventListener('click', (e)=>{
+  e.preventDefault()
   loader.classList.add('hide')
-  paperPlane.classList.remove('fly-plane')
 })

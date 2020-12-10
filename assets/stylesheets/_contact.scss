@@ -161,12 +161,15 @@
       transform: translateY(0);
     }
     .fly-plane {
-      animation: fly 1s ease-in-out 1;
+      animation: fly 5s ease-in-out 1;
     }
 
     @keyframes fly {
-      0%{transform: translate(0) ;}
-      50%{transform: translate(12rem, -30rem);}
+      0%{transform: translate(0);
+        color: $white;}
+      50%{transform: translate(12rem, -30rem);
+        font-size: 5rem;
+      }
       100%{transform: translateX(0);}
     }
   }
