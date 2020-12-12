@@ -67,38 +67,21 @@ softSkill.addEventListener('click', (e) => {
   toggler(softWrapper, soft);
 });
 
-// Form Validation
-
-let nameField = document.querySelector('#name') 
-let emailField = document.querySelector('#email') 
-let textarea = document.querySelector('.form__textarea') 
-let submitBtn = document.querySelector('.send-btn');
-let warning = document.querySelector('.warning')
-
-// if(nameField != ''  || emailField != '' || textarea != ''){
-//   submitBtn.disabled =  true;
-//   warning.classList.remove('hide');
-// }else{
-//   submitBtn.disabled =  false;
-//   warning.classList.add('hide');
-// }
+const submitBtn = document.querySelector('.send-btn');
+const paperPlane = document.querySelector('.fa-paper-plane');
+const loader = document.querySelector('.loader');
+const ok = document.querySelector('.ok');
 
 
-let paperPlane = document.querySelector('.fa-paper-plane');
-let loader = document.querySelector('.loader')
-let ok = document.querySelector('.ok')
-
- 
-submitBtn.addEventListener('click', (e)=>{
-      e.preventDefault()
-      loader.classList.remove('hide')
-      paperPlane.classList.add('fly-plane')
-})
- 
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  loader.classList.remove('hide');
+  paperPlane.classList.add('fly-plane');
+});
 
 
-ok.addEventListener('click', (e)=>{
-  e.preventDefault()
-  loader.classList.add('hide')
-  paperPlane.classList.remove('fly-plane')
-})
+ok.addEventListener('click', (e) => {
+  e.preventDefault();
+  loader.classList.add('hide');
+  paperPlane.classList.remove('fly-plane');
+});
