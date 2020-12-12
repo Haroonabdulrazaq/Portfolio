@@ -6,7 +6,6 @@ It consist of all projects i have built and skills i am comfortable working with
 ## :camera: Screenshot 
 ![screenshot](./assets/image/portfolio.png)
 
-
 ## Built With
 
 - HTML5
@@ -16,16 +15,18 @@ It consist of all projects i have built and skills i am comfortable working with
 - JavaScript(ES6)
 
 ## :rocket: Live Demo
-[LIVE DEMO LINK](https://haroonabdulrazaq.tech)
+[LIVE DEMO LINK](https://www.haroonabdulrazaq.tech)
 
 ## :camera: Presentation 
 
 
 ## Work Done 🔧
 
-- Use semantic HTML tags.
-- Use CSS selectors correctly.
-- Use HTML elements box model (margin, padding, width, height).
+- Mobile first design approach
+- Highlight some of my awesome projects
+- Display my skill in css animation
+- Include my backgorund in tech and my contacts
+- Use Sass
 - Use industry-standard tools (flexbox & grid) to place elements in the page.
 - Ability to create UIs adaptable to different screen sizes using mediaqueries.
 - Apply front-end best practices.
@@ -45,18 +46,31 @@ $ git clone https://github.com/Haroonabdulrazaq/Portfolio.git
 
 # Go into the repository
 $ cd Portfolio
-
-$ npm install
-
 ```
-## Testing
+- Open in your favorite Editor
+
+## Tools
 
 - [HTML Validator](https://validator.w3.org/)
 - [Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript)
 - [Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)
+- [TinyPNG](https://tinypng.com/)
+- [Yandex Metrica](https://metrica.yandex.com/about?)
+- [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
+- [Dead link checker](https://www.deadlinkchecker.com/)
+
+|   Index      |  Links        |   Use    |
+| ------------- |:-------------:| -----:|
+| 1 |[HTML Validator](https://validator.w3.org/) |To check HTML errors|
+| 2 |[Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript)|Linter to check css errors and enforce convention |
+| 3 |[Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)|Linter to check javaScript errors and enforce convention |
+| 4 |[TinyPNG](https://tinypng.com/)|To optimize image size |
+| 5 |[Yandex Metrica](https://metrica.yandex.com/about?)|For site analytics|
+| 6 |[Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) |To check mobile friendliness|
+| 7 |[Dead link checker](https://www.deadlinkchecker.com/)|To check for Deadlinks|
 
 ## Deploy 🚀
-This project is deploy to Netlify
+This project is deploy to [Netlify](Netlify.com)
 
 ## Author
 

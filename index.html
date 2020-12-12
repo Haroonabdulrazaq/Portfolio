@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(70414396, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true,
+         ecommerce:"dataLayer"
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/70414396" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haroon Abdulrazaq</title>
@@ -9,7 +25,13 @@
     <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
     <link rel="shortcut icon" href="assets/image/favicon.jpeg" type="image/x-icon">
 </head>
-<body class="body preload">
+<body class="body">
+    <div class="loader hide ">
+        <div class="message-modal">
+            <p class="modal-text">Message Sent <i class="fa fa-check-circle"></i></p>
+            <button class="ok">Ok</button>
+        </div>
+    </div>
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation__button">
@@ -44,7 +66,7 @@
 
             <div class="header-wrapper">
                 <div class="text-wrapper">
-                    <h3 class="header-name">Hi, I'm <span class="name"> Haroon Abdulrazaq</span></h3>
+                    <h3 class="header-name">Hi, I'm <span class="orange-color"> Haroon Abdulrazaq</span></h3>
                     <h4 class="header-name">Software Engineer</h4>
                     <div class="header-sub">I love building solutions using web technologies,
                         currently working at BitBytes technologies</div>
@@ -55,7 +77,7 @@
                         <a href="https://twitter.com/Hanq_o" target="_blank" title="@Hanq_o"><i class="fa fa-twitter">  </i></a>
                         <a href="https://angel.co/u/haroon-abdulrazaq" target="_blank" title="haroon-abdulrazaq"><i class="fa fa-angellist"></i></a>
                     </div>
-                    <a href="./assets/Haroonabdulrazaq.pdf" class="btn-primary" download> <i class="fa fa-download"></i> Resume</a>
+                    <a href="./assets/Haroonabdulrazaq.pdf" class="btn-primary" download> <i class="fa fa-download"></i> Resumé</a>
                 </div> 
             </div>
         </header>
@@ -100,7 +122,7 @@
                         </div>
                         <div class="shadow card__side card__side__back card__side__back-2">
                             <a href="https://github.com/Haroonabdulrazaq/Telegram-Bot" target="_blank" title="Github-ExchangerBot"><i class="fa fa-github">  </i></a>
-                            <a href="" target="_blank" title="Live Demo"><i class="fa fa-link"></i></a>
+                            <a href="https://t.me/Haroons_bot" target="_blank" title="Live Demo"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="card">
@@ -169,7 +191,7 @@
                     <div class="skills language">
                         Languages <span class="arrows"> <i class="fa fa-arrow-down lang"></i> </span> 
                     </div>
-                        <div class="content-wrapper language-wrapper hide">
+                        <div class="content-wrapper language-wrapper ">
                             <img src="./assets/image/js.png" title="JavaScripts" alt="JavaScripts image" class="stack js">
                             <img src="./assets/image/CSS.png" title="CSS"  alt="CSS image" class="stack css">
                             <img src="./assets/image/HTML.png" title="HTML" alt="HTML image" class="stack html">
@@ -225,9 +247,10 @@
                             <label for="email" class="form__label">Email</label>
                         </p>
                         <p class="form__group">
-                            <textarea name="Message" id="message" cols="33" rows="7" class="form__textarea" placeholder="Message"></textarea>    
+                            <textarea name="Message" id="message" cols="33" rows="7" class="form__textarea" placeholder="Message"></textarea>   
                         </p>
-                        <button class="btn-primary"><i class="fa fa-paper-plane"></i> Send </button>
+                        
+                        <button class="send-btn btn-primary"><i class="fa fa-paper-plane"></i> Send </button>
                     </form>
                     <div class="say-hi">
                         <p class="about-text"> 

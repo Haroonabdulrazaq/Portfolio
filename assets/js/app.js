@@ -66,3 +66,22 @@ softSkill.addEventListener('click', (e) => {
   adder(technologyWrapper, tech);
   toggler(softWrapper, soft);
 });
+
+const submitBtn = document.querySelector('.send-btn');
+const paperPlane = document.querySelector('.fa-paper-plane');
+const loader = document.querySelector('.loader');
+const ok = document.querySelector('.ok');
+
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  loader.classList.remove('hide');
+  paperPlane.classList.add('fly-plane');
+});
+
+
+ok.addEventListener('click', (e) => {
+  e.preventDefault();
+  loader.classList.add('hide');
+  paperPlane.classList.remove('fly-plane');
+});

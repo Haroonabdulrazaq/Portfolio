@@ -66,6 +66,59 @@ body {
   align-items: center;
 }
 
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  opacity: 0.8;
+  z-index: 0;
+
+  .message-modal {
+    border: 2px solid $white;
+    margin: 50% auto;
+    width: 70%;
+    height: 20vh;
+    color: $white;
+    border-radius: 0.5rem;
+
+    @include responsive(tab) {
+      width: 50%;
+      margin: 10% auto;
+    }
+
+    @include flexPoint(column, center);
+
+    p {
+      font-size: 2.5rem;
+
+      i {
+        color: #4caf50;
+        font-size: 3rem;
+      }
+    }
+
+    .ok {
+      width: 5rem;
+      padding: 1rem;
+      cursor: pointer;
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+      color: $white;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 300;
+      border: none;
+
+      @include responsive(tab) {
+        width: 12rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
 ul,
 li {
   list-style-type: none;
