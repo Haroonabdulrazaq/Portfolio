@@ -59,6 +59,16 @@ $ cd Portfolio
 - [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
 - [Dead link checker](https://www.deadlinkchecker.com/)
 
+|   Index      |  Links        |   Use    |
+| ------------- |:-------------:| -----:|
+| 1 |[HTML Validator](https://validator.w3.org/) |To check HTML errors|
+| 2 |[Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript)|Linter to check css errors and enforce convention |
+| 3 |[Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)|Linter to check javaScript errors and enforce convention |
+| 4 |[TinyPNG](https://tinypng.com/)|To optimize image size |
+| 5 |[Yandex Metrica](https://metrica.yandex.com/about?)|For site analytics|
+| 6 |[Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) |To check mobile friendliness|
+| 7 |[Dead link checker](https://www.deadlinkchecker.com/)|To check for Deadlinks|
+
 ## Deploy 🚀
 This project is deploy to [Netlify](Netlify.com)
 
