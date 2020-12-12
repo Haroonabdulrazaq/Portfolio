@@ -87,11 +87,6 @@ body {
   font-size: 2.5rem;
 }
 
-.loader .message-modal p i {
-  color: #4caf50;
-  font-size: 3rem;
-}
-
 .loader .message-modal .ok {
   width: 5rem;
   padding: 1rem;
@@ -643,6 +638,20 @@ a {
   transition: all 0.5s ease;
 }
 
+.form .btn-primary {
+  width: 12rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: 0.5px solid rgba(41, 152, 255, 0.8);
+  color: #2998ff;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 .header .btn-primary:hover {
   background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
   background: linear-gradient(to right bottom, #2998ff, #5643fa);
@@ -845,20 +854,6 @@ a {
     margin-top: 2rem;
     padding: 1rem;
   }
-}
-
-.form .btn-primary {
-  width: 12rem;
-  padding: 1rem;
-  cursor: pointer;
-  border: 0.5px solid rgba(41, 152, 255, 0.8);
-  color: #2998ff;
-  border-radius: 0.5rem;
-  font-size: 1.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 .form .btn-primary:hover {
@@ -1201,4 +1196,9 @@ a {
 .footer .back i {
   font-size: 5rem;
   font-weight: 200;
+}
+
+.loader .message-modal p i {
+  color: #4caf50;
+  font-size: 3rem;
 }
