@@ -22,9 +22,11 @@ It consist of all projects i have built and skills i am comfortable working with
 
 ## Work Done 🔧
 
-- Use semantic HTML tags.
-- Use CSS selectors correctly.
-- Use HTML elements box model (margin, padding, width, height).
+- Mobile first design approach
+- Highlight some of my awesome projects
+- Display my skill in css animation
+- Include my backgorund in tech and my contacts
+- Use Sass
 - Use industry-standard tools (flexbox & grid) to place elements in the page.
 - Ability to create UIs adaptable to different screen sizes using mediaqueries.
 - Apply front-end best practices.
@@ -44,18 +46,21 @@ $ git clone https://github.com/Haroonabdulrazaq/Portfolio.git
 
 # Go into the repository
 $ cd Portfolio
-
-$ npm install
-
 ```
-## Testing
+- Open in your favorite Editor
+
+## Tools
 
 - [HTML Validator](https://validator.w3.org/)
 - [Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript)
 - [Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)
+- [TinyPNG](https://tinypng.com/)
+- [Yandex Metrica](https://metrica.yandex.com/about?)
+- [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
+- [Dead link checker](https://www.deadlinkchecker.com/)
 
 ## Deploy 🚀
-This project is deploy to Netlify
+This project is deploy to [Netlify](Netlify.com)
 
 ## Author
 
