@@ -50,15 +50,6 @@ $ cd Portfolio
 - Open in your favorite Editor
 
 ## Tools
-
-- [HTML Validator](https://validator.w3.org/)
-- [Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript)
-- [Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)
-- [TinyPNG](https://tinypng.com/)
-- [Yandex Metrica](https://metrica.yandex.com/about?)
-- [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
-- [Dead link checker](https://www.deadlinkchecker.com/)
-
 |   Index      |  Links        |   Use    |
 | ------------- |:-------------:| -----:|
 | 1 |[HTML Validator](https://validator.w3.org/) |To check HTML errors|
