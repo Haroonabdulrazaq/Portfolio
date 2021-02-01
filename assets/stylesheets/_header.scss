@@ -90,7 +90,8 @@
   }
 
   .header-wrapper {
-    height: 85vh;
+    min-height: 85vh;
+
 
     @include flexPoint(column, center);
 
