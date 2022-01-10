@@ -1,0 +1,115 @@
+.projects {
+  height: auto;
+  background: $dirty-white;
+  padding: 1rem;
+  padding-bottom: 10rem;
+
+  .project-wrapper {
+    display: grid;
+    grid-template-rows: 45rem 45rem 45rem 45rem;
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem 0;
+
+    @include responsive(tab) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 45rem 45rem;
+      grid-gap: 1rem;
+    }
+
+    @include responsive(desktop) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 45rem;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  height: 45rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.5rem;
+
+  @include flexPoint(column, space-between);
+
+  &__side {
+    background: $white;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45rem;
+    width: 100%;
+  }
+
+  &__side__front {
+    .card-info {
+      min-height: 50%;
+      width: 100%;
+    }
+
+    .img-1 {
+      background: url(../image/Geo-search.png) no-repeat;
+    }
+
+    .img-2 {
+      background: url(../image/WouldYouRather.png) no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .img-3 {
+      background: url(../image/Postspot.png) no-repeat;
+    }
+
+    .img-4 {
+      background: url(../image/Devsummit.png) no-repeat;
+    }
+
+    .card-img {
+      min-height: 50%;
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  &__side__back {
+    transform: rotateY(180deg);
+
+    @include flexPoint(column, center);
+
+    a {
+      font-size: 7rem;
+      color: $white;
+    }
+
+    &-1 {
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+    }
+
+    &-2 {
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+    }
+
+    &-3 {
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+    }
+
+    &-4 {
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+    }
+  }
+
+  &:hover &__side__front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side__back {
+    transform: rotateY(0);
+  }
+}

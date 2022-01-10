@@ -1,0 +1,205 @@
+.contact-form {
+  min-height: 50vh;
+  background: $dirty-white;
+
+  @include flexPoint(column-reverse, center);
+
+  @include responsive(desktop) {
+    @include flexPoint(row, center);
+  }
+}
+
+.section-header {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 2.5rem 0;
+  line-height: 1.7;
+  background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s ease;
+
+  @include responsive(tab) {
+    font-size: 3rem;
+  }
+
+  &:hover {
+    transform: skew(-5deg, - 2deg) scale(1.1);
+    text-shadow: 0 1rem 3rem rgba($dark, 0.8);
+  }
+}
+
+.form {
+  padding: 2rem;
+  margin: 0 auto;
+
+  &__group:not(:last-child) {
+    margin-bottom: 1rem;
+
+    @include responsive(tab) {
+      display: inline;
+      margin-bottom: 1rem;
+      width: 50%;
+    }
+  }
+
+  &__input {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 0.2rem;
+    width: 100%;
+    display: block;
+    border: 0.1rem solid $light-blue;
+
+    @include responsive(tab) {
+      width: 70%;
+      font-size: 1.5rem;
+    }
+
+    @include responsive(desktop) {
+      font-size: 2rem;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $grey;
+      font-size: 1.5rem;
+
+      @include responsive(tab) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      border: 0.1rem solid rgba($light-green, 0.8);
+    }
+
+    &:focus:invalid {
+      border: 0.1rem solid $light-blue;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 1.7rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+
+    @include responsive(tab) {
+      font-size: 1.2rem;
+    }
+
+    @include responsive(desktop) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__textarea {
+    width: 100%;
+    font-family: inherit;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid rgba($light-blue, 0.8);
+
+    &::-webkit-textarea-placeholder {
+      font-size: 1.5rem;
+
+      @include responsive(tab) {
+        font-size: 2rem;
+      }
+    }
+
+    &:focus {
+      outline: inherit;
+      border-radius: 0.5rem;
+    }
+
+    @include responsive(tab) {
+      width: 70%;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+  }
+
+  .btn-primary {
+    width: 12rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: 0.5px solid rgba($light-blue, 0.8);
+    color: $light-blue;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+      color: $white;
+      box-shadow: 0 1rem 2rem rgba($dark, 0.4);
+      transform: translateY(-0.2rem);
+    }
+
+    &:active {
+      box-shadow: 0 0.5rem 5rem rgba($dark, 0.4);
+      transform: translateY(0);
+    }
+
+    .fly-plane {
+      animation: fly 1s ease-in-out 1;
+    }
+
+    @keyframes fly {
+      0% {
+        transform: translate(0);
+        z-index: 1;
+        font-size: 5rem;
+      }
+
+      50% {
+        transform: translate(12rem, -30rem);
+        font-size: 5rem;
+      }
+      100% { transform: translateX(0); }
+    }
+  }
+}
+
+.say-hi {
+  width: 100%;
+
+  @include responsive(desktop) {
+    width: 50%;
+  }
+
+  .about-text {
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 2rem;
+    text-align: center;
+
+    @include responsive(desktop) {
+      font-size: 2rem;
+    }
+
+    @include responsive(large-screen) {
+      font-size: 3rem;
+    }
+  }
+}

@@ -1,0 +1,147 @@
+.skills-section {
+  height: auto;
+  padding: 1.5rem;
+  margin: 5rem 0;
+
+  @include flexPoint(column, space-between );
+
+  @include responsive(tab) {
+    @include flexPoint(row, space-between );
+  }
+
+  .about-wrapper {
+    width: 100%;
+    height: auto;
+
+    .know-me {
+      font-weight: 700;
+      font-size: 2.5rem;
+
+      @include responsive(desktop) {
+        font-size: 3rem;
+      }
+
+      @include responsive(large-screen) {
+        font-size: 5rem;
+      }
+    }
+
+    .about-text {
+      font-size: 1.5rem;
+      line-height: 2;
+
+      @include responsive(desktop) {
+        font-size: 2rem;
+      }
+
+      @include responsive(large-screen) {
+        font-size: 5rem;
+      }
+    }
+
+    .social-media {
+      text-align: center;
+      margin: 2rem;
+
+      h4 {
+        font-size: 1.5rem;
+
+        @include responsive(desktop) {
+          font-size: 3rem;
+        }
+
+        @include responsive(large-screen) {
+          font-size: 5rem;
+        }
+      }
+
+      a {
+        font-size: 2rem;
+        margin: 0 1rem;
+
+        @include responsive(desktop) {
+          font-size: 3rem;
+        }
+
+        @include responsive(large-screen) {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+
+  .skills-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 5rem 0;
+    padding: 2rem;
+
+    .skills {
+      background: $dirty-white;
+      padding: 1rem 0.5rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+
+      .fa-arrow-down {
+        transition: all 0.2s ease-in-out;
+        transform: rotate(270deg);
+      }
+
+      .rotate-side {
+        transform: rotate(360deg);
+      }
+    }
+
+    .content-wrapper {
+      background: $white;
+      padding: 1rem;
+      height: auto;
+      border-left: 3px solid $light-blue;
+      margin-bottom: 1rem;
+
+      img {
+        margin: 1rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transform: translateX(0.5rem);
+        }
+      }
+    }
+
+    .soft-wrapper,
+    .technology-wrapper {
+      height: auto;
+
+      span {
+        display: inline-block;
+        background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+        color: $white;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 0.1rem;
+        border-radius: 0.5rem;
+
+        @include responsive(desktop) {
+          font-size: 1.5rem;
+          padding: 1rem;
+          margin: 0.5rem;
+          border-radius: 0.5rem;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0.5rem 2rem $dark;
+          border: 1px solid $light-blue;
+          background: $white;
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.footer {
+  height: 25vh;
+  background: $dark;
+  color: $white;
+  padding: 1rem;
+
+  @include flexPoint(row, space-around);
+
+  @include responsive(tab) {
+    font-size: 1.5rem;
+  }
+
+  .social-media {
+    ul,
+    li {
+      display: inline-block;
+    }
+
+    li {
+      font-size: 2rem;
+      padding: 2rem;
+
+      @include responsive(desktop) {
+        font-size: 5rem;
+        padding: 5rem;
+      }
+    }
+  }
+
+  .back {
+    i {
+      font-size: 5rem;
+      font-weight: 200;
+    }
+  }
+  // @include responsive(desktop) {
+  //   height: 25vh;
+  // }
+}

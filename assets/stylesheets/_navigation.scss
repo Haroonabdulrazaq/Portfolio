@@ -1,0 +1,118 @@
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background: $white;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.2rem;
+    position: fixed;
+    top: 2.5rem;
+    right: 1.5rem;
+    border-radius: 50%;
+    z-index: 4;
+    box-shadow: 0 0.5rem 3rem rgba($dark, 0.9);
+    text-align: center;
+    cursor: pointer;
+
+    @include responsive(tab) {
+      height: 5rem;
+      width: 5rem;
+      font-size: 3rem;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+    text-align: left;
+
+    @include responsive(desktop) {
+      top: 25%;
+      right: 45%;
+    }
+
+    a {
+      font-size: 1.7rem;
+
+      @include responsive(tab) {
+        font-size: 2rem;
+      }
+
+      @include responsive(desktop) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background: linear-gradient(to right bottom, $light-blue, $dark-blue);
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    transition: all 0.5s ease;
+
+    .social-icons {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 5rem;
+
+      a {
+        color: white;
+        margin: 0 1rem;
+        font-size: 1.7rem;
+      }
+
+      @include responsive(tab) {
+        padding-bottom: 2rem;
+
+        a {
+          font-size: 2rem;
+        }
+      }
+
+      @include responsive(desktop) {
+        padding-bottom: 2.5rem;
+
+        a {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  &__item {
+    margin: 2rem 1rem;
+
+    &:hover {
+      border-bottom: 0.2rem solid $white;
+    }
+  }
+
+  &__link {
+    color: $dirty-white;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  &__checkbox:checked ~ &__nav {
+    width: 75%;
+    opacity: 1;
+    visibility: visible;
+
+    @include responsive(tab) {
+      width: 50%;
+    }
+  }
+}
