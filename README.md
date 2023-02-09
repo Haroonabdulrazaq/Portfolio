@@ -3,22 +3,24 @@
 Portfolio showcase my skills in web technologies,
 It consist of all projects i have built and skills i am comfortable working with.
 
-## :camera: Screenshot 
+## :camera: Screenshot
+
 ![screenshot](./assets/image/portfolio.png)
 
 ## Built With
 
 - HTML5
 - CSS3(Sass/Scss)
-      [Flex]
-      [Grid]
+  [Flex]
+  [Grid]
 - JavaScript(ES6)
 
 ## :rocket: Live Demo
-[LIVE DEMO LINK](https://www.haroonabdulrazaq.tech)
 
-## :camera: Presentation 
+[LIVE DEMO LINK](https://www.haroonabdulrazaq.tech) OR
+[LIVE DEMO LINK](https://haroonabdulrazaq.github.io/Portfolio/)
 
+## :camera: Presentation
 
 ## Work Done 🔧
 
@@ -38,7 +40,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## How To Use 🔧
 
-From your command line, first clone the project:  
+From your command line, first clone the project:
 
 ```bash
 # Clone this repository
@@ -47,20 +49,23 @@ $ git clone https://github.com/Haroonabdulrazaq/Portfolio.git
 # Go into the repository
 $ cd Portfolio
 ```
+
 - Open in your favorite Editor
 
 ## Tools
-|   Index      |  Links        |   Use    |
-| ------------- |:-------------:| -----:|
-| 1 |[HTML Validator](https://validator.w3.org/) |To check HTML errors|
-| 2 |[Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript)|Linter to check css errors and enforce convention |
-| 3 |[Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)|Linter to check javaScript errors and enforce convention |
-| 4 |[TinyPNG](https://tinypng.com/)|To optimize image size |
-| 5 |[Yandex Metrica](https://metrica.yandex.com/about?)|For site analytics|
-| 6 |[Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) |To check mobile friendliness|
-| 7 |[Dead link checker](https://www.deadlinkchecker.com/)|To check for Deadlinks|
+
+| Index |                                        Links                                        |                                                      Use |
+| ----- | :---------------------------------------------------------------------------------: | -------------------------------------------------------: |
+| 1     |                     [HTML Validator](https://validator.w3.org/)                     |                                     To check HTML errors |
+| 2     | [Stylelint](https://github.com/microverseinc/linters-config/tree/master/javascript) |        Linter to check css errors and enforce convention |
+| 3     |  [Eslint](https://github.com/microverseinc/linters-config/tree/master/javascript)   | Linter to check javaScript errors and enforce convention |
+| 4     |                           [TinyPNG](https://tinypng.com/)                           |                                   To optimize image size |
+| 5     |                 [Yandex Metrica](https://metrica.yandex.com/about?)                 |                                       For site analytics |
+| 6     |    [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)    |                             To check mobile friendliness |
+| 7     |                [Dead link checker](https://www.deadlinkchecker.com/)                |                                   To check for Deadlinks |
 
 ## Deploy 🚀
+
 This project is deploy to [Netlify](Netlify.com)
 
 ## Author
@@ -76,6 +81,7 @@ This project is deploy to [Netlify](Netlify.com)
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
 - I appreciate Jonas SCHMEDTMAN for the animation techniques
 - Microverse Student Figma Design
 - Picture by Iconfinder & NicePng
@@ -83,4 +89,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
-
